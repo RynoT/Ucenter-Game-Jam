@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{BA7F091E-959B-4CF2-84C1-8E741F28CA02}" SchemaVersion="80">
 	<Modulators>
-		<WorkUnit Name="Default Work Unit" ID="{BA7F091E-959B-4CF2-84C1-8E741F28CA02}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{BA7F091E-959B-4CF2-84C1-8E741F28CA02}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorEnvelope Name="Engine" ID="{B29208B0-6C7D-4AA2-B412-0E76DDDE45D5}" ShortID="226084608">
+					<PropertyList>
+						<Property Name="EnvelopeAttackCurve" Type="Real64" Value="0"/>
+						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0"/>
+						<Property Name="EnvelopeDecayTime" Type="Real64" Value="2"/>
+						<Property Name="EnvelopeReleaseTime" Type="Real64" Value="1"/>
+						<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+					</PropertyList>
+				</ModulatorEnvelope>
+			</ChildrenList>
+		</WorkUnit>
 	</Modulators>
 </WwiseDocument>

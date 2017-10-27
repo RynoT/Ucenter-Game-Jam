@@ -1,6 +1,1015 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{759B1F06-D9C3-4BB2-99C4-830D26E2627B}" SchemaVersion="80">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{759B1F06-D9C3-4BB2-99C4-830D26E2627B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{759B1F06-D9C3-4BB2-99C4-830D26E2627B}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Car" ID="{D3DB4AD0-E72C-4DB3-BB22-F7B36E211B2A}" ShortID="276289717">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Engine" ID="{71B45A53-5922-41A3-BF5A-7FBB6E6AAE25}" ShortID="571598786">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{CCDB9839-F4C3-4B63-84E2-1AEE2225FC7B}" ShortID="727693351">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Camera_Height" ID="{F196F789-FFD3-4327-810A-DDD3B8FC8FBA}" WorkUnitID="{04E96FA2-A590-4BEA-A3F1-4B39CB6850FA}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{E835673B-2F44-4E6A-825B-8703ED22DB41}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>49</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{7154310C-A4C4-4365-AF6A-07063E8392D0}" ShortID="621838311">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Camera_Height" ID="{F196F789-FFD3-4327-810A-DDD3B8FC8FBA}" WorkUnitID="{04E96FA2-A590-4BEA-A3F1-4B39CB6850FA}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{6F995FF7-A13C-42AA-AD0B-728F55FE99AA}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>-11.99281</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Forward" ID="{C104E28C-A636-4903-A567-D8AB81EDD469}" ShortID="607352805">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{6E6B0956-D6C0-4280-BE50-D539CABC828A}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Accelerate" ID="{4C81A597-7CC1-43DF-B675-39F8F7E0443D}" ShortID="143255714">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-13</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ObjectRef Name="High_Pass_60Hz" ID="{F9627628-0B10-4272-BC30-D4C20423CB38}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Accelerate 2" ID="{8B52DD40-47CD-41A3-AF6A-59644CAAD4A4}" ShortID="433466768">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Accelerate 2" ID="{9512E455-9991-4D5A-8DA5-39E2ED8971CA}" ShortID="541647630">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.172825674690007"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.547769511305617"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Accelerate 2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Accelerate 2" ID="{9512E455-9991-4D5A-8DA5-39E2ED8971CA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Accelerate" ID="{BC070E51-1822-4AC4-8B07-72FA96A522B4}" ShortID="63053357">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Accelerate" ID="{077FAB8B-3AFA-4499-8A4D-5F93A7ED43C2}" ShortID="285705725">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.568274252370533"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.06038803792852"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Accelerate.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Accelerate" ID="{077FAB8B-3AFA-4499-8A4D-5F93A7ED43C2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<BlendContainer Name="Speed" ID="{2115A2B2-DA94-4CA9-B300-580CAF0A9E9B}" ShortID="293213801">
+											<PropertyList>
+												<Property Name="BlendBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-14</Value>
+													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{3B0078A9-970C-4871-8596-5DBDE526C540}" ShortID="864515835">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Engine" ID="{B29208B0-6C7D-4AA2-B412-0E76DDDE45D5}" WorkUnitID="{BA7F091E-959B-4CF2-84C1-8E741F28CA02}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{2C2B19B5-43A7-4757-9FB5-581FB309D155}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-9.20923</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-0.24607</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="forward fast" ID="{98939E50-7650-4AB6-878A-5DDA9F6E68F5}" ShortID="928257650">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{79EEF43B-0459-4B7A-BF1E-7A33B20C895D}" ShortID="1027017219">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="Car_Speed" ID="{CEAE7B61-8CAC-4587-BACD-8136C9778638}" WorkUnitID="{04E96FA2-A590-4BEA-A3F1-4B39CB6850FA}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{87CC11FC-7C6A-4773-8C7F-B4A39771C6D9}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>50</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>90</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="forward fast" ID="{E412A6CF-A6A3-4A42-B3D4-8E3A2E835F5C}" ShortID="340982495">
+															<Language>SFX</Language>
+															<AudioFile>forward fast.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="forward fast" ID="{E412A6CF-A6A3-4A42-B3D4-8E3A2E835F5C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="forward medium" ID="{17ABAB6A-89EA-47AE-A4D4-61159F390F3A}" ShortID="805353377">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{BC369B5C-1605-466B-8742-CD27AE2A11AD}" ShortID="602366066">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="Car_Speed" ID="{CEAE7B61-8CAC-4587-BACD-8136C9778638}" WorkUnitID="{04E96FA2-A590-4BEA-A3F1-4B39CB6850FA}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{A5402D7A-042C-4C0C-9F23-AFEB540B8403}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>10</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>50</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>69.9236641221374</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>99.999</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="forward medium" ID="{224951BD-E3B0-4FBA-9549-BAAF3C99273C}" ShortID="954874908">
+															<Language>SFX</Language>
+															<AudioFile>forward medium.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="forward medium" ID="{224951BD-E3B0-4FBA-9549-BAAF3C99273C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="forward slow" ID="{24690B2D-0032-4DBF-BD42-E2A333A56229}" ShortID="325806380">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{CED7DFB5-EE67-45D2-993C-C41627D0B789}" ShortID="350479307">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="Car_Speed" ID="{CEAE7B61-8CAC-4587-BACD-8136C9778638}" WorkUnitID="{04E96FA2-A590-4BEA-A3F1-4B39CB6850FA}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{D9C79A3B-384E-40BE-ABD7-AADACFA53BD7}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-0.14681</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>30</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>70</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="forward slow" ID="{E785B3A7-282B-402F-84C7-375D56BC0F90}" ShortID="914715921">
+															<Language>SFX</Language>
+															<AudioFile>forward slow.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="forward slow" ID="{E785B3A7-282B-402F-84C7-375D56BC0F90}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="Accelerate" ID="{4C81A597-7CC1-43DF-B675-39F8F7E0443D}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<Sound Name="Engine Start" ID="{13DBC9A1-CE9B-42DB-B60C-984B416BDD36}" ShortID="499748868">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<ObjectRef Name="High_Pass_60Hz" ID="{F9627628-0B10-4272-BC30-D4C20423CB38}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Engine Start" ID="{18CD9C0A-EB77-4EB2-A347-0497E2D96ACB}" ShortID="72377158">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.01352005835157"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.64037928519329"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Engine Start.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Engine Start" ID="{18CD9C0A-EB77-4EB2-A347-0497E2D96ACB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Engine Idle 3" ID="{145FA659-784A-4764-9F87-FB636021BF9C}" ShortID="121606498">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<ObjectRef Name="High_Pass_60Hz" ID="{F9627628-0B10-4272-BC30-D4C20423CB38}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Engine Idle 3" ID="{030EE999-0CBB-4CC3-B948-BE8AADF5ED8E}" ShortID="575448449">
+											<Language>SFX</Language>
+											<AudioFile>Engine Idle 3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Engine Idle 3" ID="{030EE999-0CBB-4CC3-B948-BE8AADF5ED8E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Tyres" ID="{D5ECBA38-1F9E-49A1-A749-157D4080AF99}" ShortID="119388842">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7B144B40-52A9-4893-8C63-1F4AFAE8DAC3}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="51"/>
+															<Property Name="Min" Type="Real64" Value="-51"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{80C3A9B4-02C3-465F-93B1-DEBE99376B53}" ShortID="381776350">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Car_Speed" ID="{CEAE7B61-8CAC-4587-BACD-8136C9778638}" WorkUnitID="{04E96FA2-A590-4BEA-A3F1-4B39CB6850FA}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{11F6CBCA-1E51-451E-ACC9-9A1B4623DDFA}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>77.40458</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>90.07634</XPos>
+																<YPos>-0.11163</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="tyre squeal 1" ID="{331D8DCE-F26E-4E2A-8EE7-71BE7FCDDE53}" ShortID="1016232016">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="tyre squeal 1" ID="{47AFFAAF-F776-4CCA-990D-95EC4465EB46}" ShortID="386667382">
+													<Language>SFX</Language>
+													<AudioFile>tyre squeal 1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="tyre squeal 1" ID="{47AFFAAF-F776-4CCA-990D-95EC4465EB46}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="tyre squeal 2" ID="{2FA88941-A630-43BB-B04D-55F27470D68D}" ShortID="58105531">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="tyre squeal 2" ID="{DF107FE1-39E1-41B0-958D-80AC0079D7BD}" ShortID="939233769">
+													<Language>SFX</Language>
+													<AudioFile>tyre squeal 2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="tyre squeal 2" ID="{DF107FE1-39E1-41B0-958D-80AC0079D7BD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="tyre squeal 3" ID="{88AAD2E1-F874-4CB8-B615-E6626D7ED174}" ShortID="876392350">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="tyre squeal 3" ID="{298A4C2D-50C6-480B-ABB1-6981A85C421D}" ShortID="262583514">
+													<Language>SFX</Language>
+													<AudioFile>tyre squeal 3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="tyre squeal 3" ID="{298A4C2D-50C6-480B-ABB1-6981A85C421D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="tyre squeal 4" ID="{0C85DCD3-C8E2-4A9D-920C-8644ADF76B60}" ShortID="106097164">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="tyre squeal 4" ID="{6795221E-DC9F-4569-AC6C-5CC9C7242A27}" ShortID="857288592">
+													<Language>SFX</Language>
+													<AudioFile>tyre squeal 4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="tyre squeal 4" ID="{6795221E-DC9F-4569-AC6C-5CC9C7242A27}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="tyre squeal 5" ID="{22B8C03B-7339-4286-B109-A4FDEBA8E3F5}" ShortID="630500211">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="tyre squeal 5" ID="{D17B138C-B61E-44C8-BEF8-5B1AFFA008DE}" ShortID="555637963">
+													<Language>SFX</Language>
+													<AudioFile>tyre squeal 5.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="tyre squeal 5" ID="{D17B138C-B61E-44C8-BEF8-5B1AFFA008DE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="tyre squeal 6" ID="{ABED1962-5619-486A-85E2-8630A59AA3E1}" ShortID="754263536">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="tyre squeal 6" ID="{7C3B4B31-C876-4C45-A4AC-D638D26978A4}" ShortID="226065376">
+													<Language>SFX</Language>
+													<AudioFile>tyre squeal 6.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="tyre squeal 6" ID="{7C3B4B31-C876-4C45-A4AC-D638D26978A4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Horn" ID="{F14ED1CB-80F3-4923-9E0A-A071812137E0}" ShortID="805359222">
+									<PropertyList>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F7259323-7F9B-4CAD-937E-B6D6AA26F447}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="51"/>
+															<Property Name="Min" Type="Real64" Value="-51"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Horn 1" ID="{75D54198-9CB1-4433-A833-C403714CE690}" ShortID="274848886">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Horn 1" ID="{54FEBFA8-281D-4056-8039-345ADE2E4274}" ShortID="860426230">
+													<Language>SFX</Language>
+													<AudioFile>Horn 1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Horn 1" ID="{54FEBFA8-281D-4056-8039-345ADE2E4274}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Horn 2" ID="{FC63DCAE-742E-4226-B89B-E442A350F29A}" ShortID="875546000">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Horn 2" ID="{5F24AAAC-AB45-4B16-A958-90F3B72463C6}" ShortID="593012471">
+													<Language>SFX</Language>
+													<AudioFile>Horn 2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Horn 2" ID="{5F24AAAC-AB45-4B16-A958-90F3B72463C6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Environment" ID="{6B8B82FA-5A73-4658-A0BF-21D71FC78CB2}" ShortID="877193996">
+					<PropertyList>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
+							<RTPCList>
+								<RTPC Name="" ID="{9EAD0265-08DE-48ED-9921-C16434AF2FA6}" ShortID="365754019">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Camera_Height" ID="{F196F789-FFD3-4327-810A-DDD3B8FC8FBA}" WorkUnitID="{04E96FA2-A590-4BEA-A3F1-4B39CB6850FA}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{5CB85A95-0AD9-44B1-BAC7-18AC8597AF71}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>42.95213</XPos>
+												<YPos>41</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>62</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{005D2FD7-76B8-4764-AD80-C86255C057C9}" ShortID="737941843">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Camera_Height" ID="{F196F789-FFD3-4327-810A-DDD3B8FC8FBA}" WorkUnitID="{04E96FA2-A590-4BEA-A3F1-4B39CB6850FA}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{7C29C62E-9CCF-4DEF-A95B-25CFF7DF2E24}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-13.01046</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{798A817F-2729-4B03-8E31-4F25DC2B8653}" ShortID="871445629">
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{E7E9C4BC-9578-428C-A5E9-E4D2E162D4BA}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>100</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Traffic 1" ID="{4EA028FA-A4CE-43DE-B560-4CBFE310C521}" ShortID="577895892">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Traffic 1" ID="{691BBEA0-7849-4457-AD83-4C224460DCB3}" ShortID="732294080">
+									<Language>SFX</Language>
+									<AudioFile>Traffic 1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Traffic 1" ID="{691BBEA0-7849-4457-AD83-4C224460DCB3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Traffic Horns 1" ID="{B09BD9FA-263A-40CF-A9A3-411200D4A208}" ShortID="511666281">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Traffic Horns 1" ID="{1A221E54-AFEA-4463-9F0F-73A8015653B5}" ShortID="603320399">
+									<Language>SFX</Language>
+									<AudioFile>Traffic Horns 1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Traffic Horns 1" ID="{1A221E54-AFEA-4463-9F0F-73A8015653B5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="fountain" ID="{D751FFCC-28C6-4D19-B455-91BF6043552C}" ShortID="921074356">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="fountain" ID="{FC028650-53DF-49D8-9B0B-ED1BBCCD4F0D}" ShortID="33504937">
+									<Language>SFX</Language>
+									<AudioFile>fountain.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="fountain" ID="{FC028650-53DF-49D8-9B0B-ED1BBCCD4F0D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="suburbs 1" ID="{310944DA-750B-42CF-B7E6-7049AD6007E2}" ShortID="449747770">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="suburbs 1" ID="{E59A8A9C-9AB2-47BC-BF43-D0E56D1473D9}" ShortID="994158890">
+									<Language>SFX</Language>
+									<AudioFile>suburbs 1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="suburbs 1" ID="{E59A8A9C-9AB2-47BC-BF43-D0E56D1473D9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Interactables" ID="{FE6100F7-0037-474B-85FC-804515D218D4}" ShortID="141844918">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+				<ActorMixer Name="Clouds" ID="{D638EDC9-FC7E-4F7C-AF6D-4612FBB49A5E}" ShortID="642399971">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{FD648285-6109-44AB-B49F-09F131CE9A82}" ShortID="579407644">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Camera_Height" ID="{F196F789-FFD3-4327-810A-DDD3B8FC8FBA}" WorkUnitID="{04E96FA2-A590-4BEA-A3F1-4B39CB6850FA}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{7C7E2B6F-A1F3-48CC-9433-2BD4107C0368}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="wind" ID="{3CEB360C-A09E-45AB-A9D0-1A4BD1B5D524}" ShortID="447106025">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CDF3A479-7CEA-4EA6-B79B-6A88D23F7DF7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5328305-74BF-4EA8-80C0-2511EC7345EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="wind" ID="{9CC1FFA9-13E0-4EF8-8C02-E768C8CA9189}" ShortID="206457318">
+									<Language>SFX</Language>
+									<AudioFile>wind.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="wind" ID="{9CC1FFA9-13E0-4EF8-8C02-E768C8CA9189}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

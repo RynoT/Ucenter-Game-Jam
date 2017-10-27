@@ -13,6 +13,74 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
+<<<<<<< HEAD
+  - PhysicalPath: Events/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{F8772D31-9C8C-4096-AFDC-C99E719A2E51}'
+    m_lastTimePsrt1: -519017600
+    m_lastTimePart2: -1999299299
+    List:
+    - Name: Start_Engine
+      Path: Default Work Unit/Start_Engine
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Start_Engine
+        ObjectType: 3
+      ID: 1300784916
+      Guid: 8da23624c1c5df468eb01cdfda80e002
+      maxAttenuation: 0
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{B5328305-74BF-4EA8-80C0-2511EC7345EA}'
+    m_lastTimePsrt1: 989935872
+    m_lastTimePart2: -1999299330
+    List: []
+  StateWwu:
+  - PhysicalPath: States/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{9EEDBD1A-FD03-4404-95EF-DAE95199D785}'
+    m_lastTimePsrt1: 989935872
+    m_lastTimePart2: -1999299330
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{BB14AAF2-332B-4F65-86CC-A1CB9886B629}'
+    m_lastTimePsrt1: 989935872
+    m_lastTimePart2: -1999299330
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{0D737BE3-61C7-4C35-971D-EB14DB28A005}'
+    m_lastTimePsrt1: -1614050304
+    m_lastTimePart2: -1999299300
+    List:
+    - Name: Main
+      Path: Default Work Unit/Main
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main
+        ObjectType: 7
+      ID: -1133058374
+      Guid: 53783e7f053ac54e9dd65af5aa6ec694
+  RtpcWwu:
+  - PhysicalPath: Game Parameters/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{04E96FA2-A590-4BEA-A3F1-4B39CB6850FA}'
+    m_lastTimePsrt1: 989935872
+    m_lastTimePart2: -1999299330
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{825930E6-137D-401C-9713-2D82A831AD34}'
+    m_lastTimePsrt1: 989935872
+    m_lastTimePart2: -1999299330
+=======
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{F8772D31-9C8C-4096-AFDC-C99E719A2E51}'
@@ -95,6 +163,7 @@ MonoBehaviour:
     m_lastTimePsrt1: 799495744
     m_lastTimePart2: -1999299311
 >>>>>>> Car control
+>>>>>>> b3fdc5d8432a3292b1cc2e3dc2e49d810b03eb4e
     List: []
   ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
