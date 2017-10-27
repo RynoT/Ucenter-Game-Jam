@@ -35,6 +35,7 @@ public class GridPathFinder : MonoBehaviour {
         {
             return Mathf.Pow(this.x - x, 2.0f) + Mathf.Pow(this.y - y, 2.0f);
         }
+         
     }
 
     public void init(CityGrid.GridItemType[] grid, int width, int height)
@@ -42,6 +43,11 @@ public class GridPathFinder : MonoBehaviour {
         this.grid = grid;
         this.width = width;
         this.height = height;
+    }
+
+    public Node node(int x, int y)
+    {
+        return new Node(x, y, ref this.grid[x + y * this.width]);
     }
 
     private Node[] trace(ref Node end) {
@@ -56,10 +62,11 @@ public class GridPathFinder : MonoBehaviour {
             path.Add(current);
             current = current.parent;
         }
+        path.Add(current);
         return path.ToArray();
     }
    
-    public Node[] generate(ref Node from, ref Node to)
+    public Node[] generate(Node from, Node to)
     {
         int[][] offsets = new int[][]{ new int[]{ 1, 0 }, new int[]{ -1, 0 }, 
             new int[]{ 0, 1 }, new int[]{ 0, -1 } };
@@ -88,6 +95,16 @@ public class GridPathFinder : MonoBehaviour {
                     to.parent = q;
                     return this.trace(ref to);
                 }
+                if (newX < 0 || newX >= this.width || newY < 0 || newY >= this.height)
+                {
+                    continue;
+                }
+                CityGrid.GridItemType type = this.grid[newX + newY * this.width];
+                if (type != CityGrid.GridItemType.ROAD)
+                {
+                    continue;
+                }
+
                 Node match = closed.Find(delegate(Node obj) { return obj.x == newX && obj.y == newY; });
                 //Node match = from node in closed where (node.x == newX && node.y == newY) select node;
                 if (match != null)
@@ -97,11 +114,11 @@ public class GridPathFinder : MonoBehaviour {
                 match = open.Find(delegate(Node obj) { return obj.x == newX && obj.y == newY; });
                 if (match == null)
                 {
-                    open.Add(new Node(newX, newY, ref this.grid[newY + newX * this.width]).init(ref to, ref q));
+                    open.Add(new Node(newX, newY, ref type).init(ref to, ref q));
                 }
                 else
                 {
-                    float newG = q.g + (int)this.grid[newX + newY * this.width];
+                    float newG = q.g + (int)type;
                     if (newG + q.h < match.f)
                     {
                         match.g = newG;

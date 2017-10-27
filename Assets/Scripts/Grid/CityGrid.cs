@@ -2,23 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CityGrid : MonoBehaviour {
+public class CityGrid : MonoBehaviour
+{
 
-    public enum GridItemType 
+    public enum GridItemType
     {
-        UNSET = 0, UNKNOWN = 1, HOUSE = 10, ROAD = 10
+        UNSET = 0,
+        UNKNOWN = 1,
+        HOUSE = 2,
+        ROAD = 3
     }
 
     public float gridSize = 2.0f;
     private GridPathFinder pathfinder;
 
-	public void Start() {
+    public void Start()
+    {
         // Get width and height of grid
         int width = 0, height = 0;
-        foreach(Transform transform in base.transform)
+        foreach (Transform transform in base.transform)
         {
-            width = Mathf.Max((int)(transform.position.x / this.gridSize), width);
-            height = Mathf.Min((int)(transform.position.z / this.gridSize), height);
+            int x = (int)(transform.position.x / this.gridSize), 
+                    y = (int)(transform.position.z / this.gridSize);
+            Debug.Assert(x >= 0 && y >= 0, "Don't use negative grid tiles");
+            width = Mathf.Max(x, width);
+            height = Mathf.Max(y, height);
         }
         if (width == 0 && height == 0)
         {
@@ -27,7 +35,7 @@ public class CityGrid : MonoBehaviour {
 
         // Get grid tile type
         GridItemType[] grid = new GridItemType[++width * ++height];
-        foreach(Transform transform in base.transform)
+        foreach (Transform transform in base.transform)
         {
             int x = (int)(transform.position.x / this.gridSize);
             int y = (int)(transform.position.z / this.gridSize);
@@ -50,12 +58,15 @@ public class CityGrid : MonoBehaviour {
         // Initialize the pathfinder
         this.pathfinder = base.gameObject.AddComponent<GridPathFinder>();
         this.pathfinder.init(grid, width, height);
-	}
-	
-	public void Update() {
+    }
+
+    public GridPathFinder.Node[] pathfind(float x1, float y1, float x2, float y2)
+    {
         if (this.pathfinder == null)
         {
-            return;
+            return null;
         }
-	}
+        return this.pathfinder.generate(this.pathfinder.node((int)(x1 / this.gridSize), (int)(y1 / this.gridSize)), 
+            this.pathfinder.node((int)(x2 / this.gridSize), (int)(y2 / this.gridSize)));
+    }
 }

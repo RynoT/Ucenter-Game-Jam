@@ -6,12 +6,19 @@ public class CameraBind : MonoBehaviour
 {
 
 	public float height;
-	public Vector3 cameraSpeed;
+    public Vector3 cameraSpeed;
+    public float lookAtDeadZone = 2.0f;
+
 	public GameObject bound;
+    private Rigidbody body;
 
 	public void Start() 
 	{
 		this.SetToBound();
+        if (this.bound != null)
+        {
+            this.body = this.bound.GetComponent<Rigidbody>();
+        }
 	}
 
 	public void SetToBound() 
@@ -23,23 +30,25 @@ public class CameraBind : MonoBehaviour
 		}
 	}
 
-	public void Update() 
+	public void FixedUpdate() 
 	{
 		if (this.bound == null) 
 		{
 			return;
 		}
 		// Height interpolate
-        Vector3 current = this.transform.position;
-        Vector3 target = this.bound.transform.position;
-		target.y += this.height;
+        Vector3 current = this.transform.position, target = this.bound.transform.position;
 
 		Vector3 frame = new Vector3();
          
-        frame.x = Mathf.SmoothDamp(current.x, target.x, ref this.cameraSpeed.x, Time.deltaTime);
-        frame.y = Mathf.SmoothDamp(current.y, target.y, ref this.cameraSpeed.y, Time.deltaTime);
-        frame.z = Mathf.SmoothDamp(current.z, target.z, ref this.cameraSpeed.z, Time.deltaTime);
+        frame.x = Mathf.Lerp(current.x, target.x, this.cameraSpeed.x * Time.deltaTime);
+        frame.y = Mathf.Lerp(current.y, target.y + this.height, this.cameraSpeed.y * Time.deltaTime);
+        frame.z = Mathf.Lerp(current.z, target.z, this.cameraSpeed.z * Time.deltaTime);
 
-		this.transform.position = target;
+        this.transform.position = frame;
+
+        Quaternion rotation = this.transform.rotation;
+        this.transform.LookAt(target);
+        this.transform.rotation = Quaternion.Lerp(rotation, this.transform.rotation, this.lookAtDeadZone * Time.deltaTime);
 	}
 }

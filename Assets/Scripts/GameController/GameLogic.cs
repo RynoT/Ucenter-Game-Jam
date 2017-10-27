@@ -7,7 +7,7 @@ public class GameLogic : MonoBehaviour {
     public CityGrid city;
     public GameObject player;
 
-    public DeliverObjective objective;
+    private DeliverObjective objective;
 
     public void Start() {
 	}
@@ -20,6 +20,7 @@ public class GameLogic : MonoBehaviour {
         if (this.objective == null)
         {
             this.objective = base.gameObject.AddComponent<DeliverObjective>();
+            this.objective.init(ref this.city);
         }
 	}
 }

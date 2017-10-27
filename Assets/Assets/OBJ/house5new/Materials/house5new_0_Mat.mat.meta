@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 30a66465c49432b4eb7bea3f8d3bdd5a
 timeCreated: 1509131939
+=======
+guid: fbaaed64c74cdf04c82b7061b31a3597
+timeCreated: 1509117302
+>>>>>>> Completed camera movement
 licenseType: Free
 NativeFormatImporter:
   mainObjectFileID: 2100000

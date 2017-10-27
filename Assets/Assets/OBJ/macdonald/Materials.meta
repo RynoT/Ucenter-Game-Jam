@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: bb6d3b45c26fffb4eab5dea672720eb5
 folderAsset: yes
 timeCreated: 1509131939
+=======
+guid: 2dbf83c341dd48d4ea8ee4f1c2cb5e38
+folderAsset: yes
+timeCreated: 1509117302
+>>>>>>> Completed camera movement
 licenseType: Free
 DefaultImporter:
   userData: 
