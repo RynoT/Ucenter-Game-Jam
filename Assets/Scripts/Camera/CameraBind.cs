@@ -18,7 +18,7 @@ public class CameraBind : MonoBehaviour
 	{
 		if (this.bound != null) 
 		{
-			Vector3 position = this.bound.transform.localPosition;
+			Vector3 position = this.bound.transform.position;
 			this.transform.localPosition = new Vector3(position.x, position.y + this.height, position.z);
 		}
 	}
@@ -30,8 +30,8 @@ public class CameraBind : MonoBehaviour
 			return;
 		}
 		// Height interpolate
-		Vector3 current = this.transform.localPosition;
-		Vector3 target = this.bound.transform.localPosition;
+        Vector3 current = this.transform.position;
+        Vector3 target = this.bound.transform.position;
 		target.y += this.height;
 
 		Vector3 frame = new Vector3();
