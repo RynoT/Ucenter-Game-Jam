@@ -1,6 +1,199 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F8772D31-9C8C-4096-AFDC-C99E719A2E51}" SchemaVersion="80">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{F8772D31-9C8C-4096-AFDC-C99E719A2E51}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F8772D31-9C8C-4096-AFDC-C99E719A2E51}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Start_Engine" ID="{2436A28D-C5C1-46DF-8EB0-1CDFDA80E002}">
+					<ChildrenList>
+						<Action Name="" ID="{706C8459-EDD9-4FEA-A27C-61BF099BF9CC}" ShortID="840014039">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Engine Start" ID="{13DBC9A1-CE9B-42DB-B60C-984B416BDD36}" WorkUnitID="{759B1F06-D9C3-4BB2-99C4-830D26E2627B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{EDC9831A-2AE9-483B-A534-97621340734C}" ShortID="980404351">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="0.5"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Engine Idle 3" ID="{145FA659-784A-4764-9F87-FB636021BF9C}" WorkUnitID="{759B1F06-D9C3-4BB2-99C4-830D26E2627B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Game_Start" ID="{0E4A7DC2-6D11-4812-9DA1-C979B0E7C01D}">
+					<ChildrenList>
+						<Action Name="" ID="{E3FB5F17-BA44-47DE-9001-D998716364BA}" ShortID="933984170">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{1FADE7FE-29A6-477E-A8DD-69510598F7AD}" WorkUnitID="{DA08B4A4-0758-47F7-849D-AE9E8D4EB3D1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4DC8721F-F10F-4340-9555-C196AD5D038E}" ShortID="780678346">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="wind" ID="{3CEB360C-A09E-45AB-A9D0-1A4BD1B5D524}" WorkUnitID="{759B1F06-D9C3-4BB2-99C4-830D26E2627B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{DAF98845-1541-468B-AECA-1FF8B068EB66}" ShortID="21301464">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="fountain" ID="{D751FFCC-28C6-4D19-B455-91BF6043552C}" WorkUnitID="{759B1F06-D9C3-4BB2-99C4-830D26E2627B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{7A352DD8-2F1A-4CFE-B75A-F4026DDE6551}" ShortID="226556403">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="suburbs 1" ID="{310944DA-750B-42CF-B7E6-7049AD6007E2}" WorkUnitID="{759B1F06-D9C3-4BB2-99C4-830D26E2627B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{BBE9B154-DF04-44A6-8A11-BA868A620F70}" ShortID="868493348">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Traffic 1" ID="{4EA028FA-A4CE-43DE-B560-4CBFE310C521}" WorkUnitID="{759B1F06-D9C3-4BB2-99C4-830D26E2627B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B67F5624-C7D1-46F7-BE70-CFBF2859235C}" ShortID="322676026">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pressure" ID="{C29A9EA9-B46F-4F94-89DD-F22BF66B3C30}" WorkUnitID="{DA08B4A4-0758-47F7-849D-AE9E8D4EB3D1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Car_Forward" ID="{C70D8B99-B8C0-4718-A656-5DEFE14BD3A8}">
+					<ChildrenList>
+						<Action Name="" ID="{EF99ED88-D4CE-419A-8D1C-31B85124623D}" ShortID="482079404">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Accelerate" ID="{4C81A597-7CC1-43DF-B675-39F8F7E0443D}" WorkUnitID="{759B1F06-D9C3-4BB2-99C4-830D26E2627B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E8D521E4-FC66-4F20-8721-784C2E7D3A7A}" ShortID="1033256217">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Speed" ID="{2115A2B2-DA94-4CA9-B300-580CAF0A9E9B}" WorkUnitID="{759B1F06-D9C3-4BB2-99C4-830D26E2627B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9FA847F3-F459-4B9F-88E3-91451D37D541}" ShortID="73022117">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Engine Idle 3" ID="{145FA659-784A-4764-9F87-FB636021BF9C}" WorkUnitID="{759B1F06-D9C3-4BB2-99C4-830D26E2627B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Car_Stop" ID="{652B8397-3BE6-40DC-988C-476214CDF6C0}">
+					<ChildrenList>
+						<Action Name="" ID="{5B42F078-6FB1-4FE0-B6C1-00A5827E32EF}" ShortID="335817428">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Engine Idle 3" ID="{145FA659-784A-4764-9F87-FB636021BF9C}" WorkUnitID="{759B1F06-D9C3-4BB2-99C4-830D26E2627B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{73D7C335-A0BF-4454-A70E-7F21FC871318}" ShortID="194322757">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Accelerate" ID="{4C81A597-7CC1-43DF-B675-39F8F7E0443D}" WorkUnitID="{759B1F06-D9C3-4BB2-99C4-830D26E2627B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A444F9D8-E254-4661-BF91-75293227376D}" ShortID="449435049">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Speed" ID="{2115A2B2-DA94-4CA9-B300-580CAF0A9E9B}" WorkUnitID="{759B1F06-D9C3-4BB2-99C4-830D26E2627B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Car_Turn" ID="{7E57062E-484D-47BA-BC75-9A2B00D52BB8}">
+					<ChildrenList>
+						<Action Name="" ID="{E308BC7E-6A77-47D7-BACB-306E2486D38A}" ShortID="607330016">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tyres" ID="{D5ECBA38-1F9E-49A1-A749-157D4080AF99}" WorkUnitID="{759B1F06-D9C3-4BB2-99C4-830D26E2627B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Car_Horn" ID="{5A5F92D8-AD58-4A1C-BCF2-BF337146D792}">
+					<ChildrenList>
+						<Action Name="" ID="{5B3503AF-EB6B-4B12-B087-022EF939F4F4}" ShortID="550705971">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Horn" ID="{F14ED1CB-80F3-4923-9E0A-A071812137E0}" WorkUnitID="{759B1F06-D9C3-4BB2-99C4-830D26E2627B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

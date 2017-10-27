@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{304A96A0-1C2C-4003-9715-0FDBAAFC36E4}" SchemaVersion="80">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{304A96A0-1C2C-4003-9715-0FDBAAFC36E4}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{304A96A0-1C2C-4003-9715-0FDBAAFC36E4}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Testing" ID="{72F4FF46-0888-4BD2-BDC0-66AEFCA84195}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Music" ID="{1FADE7FE-29A6-477E-A8DD-69510598F7AD}" WorkUnitID="{DA08B4A4-0758-47F7-849D-AE9E8D4EB3D1}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Car_Stop" ID="{652B8397-3BE6-40DC-988C-476214CDF6C0}" WorkUnitID="{F8772D31-9C8C-4096-AFDC-C99E719A2E51}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Start_Engine" ID="{2436A28D-C5C1-46DF-8EB0-1CDFDA80E002}" WorkUnitID="{F8772D31-9C8C-4096-AFDC-C99E719A2E51}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Car_Horn" ID="{5A5F92D8-AD58-4A1C-BCF2-BF337146D792}" WorkUnitID="{F8772D31-9C8C-4096-AFDC-C99E719A2E51}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Game_Start" ID="{0E4A7DC2-6D11-4812-9DA1-C979B0E7C01D}" WorkUnitID="{F8772D31-9C8C-4096-AFDC-C99E719A2E51}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Car_Turn" ID="{7E57062E-484D-47BA-BC75-9A2B00D52BB8}" WorkUnitID="{F8772D31-9C8C-4096-AFDC-C99E719A2E51}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Car_Forward" ID="{C70D8B99-B8C0-4718-A656-5DEFE14BD3A8}" WorkUnitID="{F8772D31-9C8C-4096-AFDC-C99E719A2E51}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Camera_Height" ID="{F196F789-FFD3-4327-810A-DDD3B8FC8FBA}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Car_Speed" ID="{CEAE7B61-8CAC-4587-BACD-8136C9778638}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Frustration" ID="{7ED64386-FA76-46F3-B93E-7D05C5888536}"/>
+							<Value>44</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Fuel" ID="{718CE9F8-A53F-4E48-8E4B-ADF40D6783E4}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="music_4" ID="{538F95B3-EDFB-4B2F-970C-835D1BAEDB9C}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
