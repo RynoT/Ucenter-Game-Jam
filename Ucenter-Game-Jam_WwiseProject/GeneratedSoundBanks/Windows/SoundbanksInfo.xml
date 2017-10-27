@@ -37,6 +37,10 @@
 					<ShortName>Part 2 voicebox.wav</ShortName>
 					<Path>SFX/Part 2 voicebox_F17FB28C.wem</Path>
 				</File>
+				<File Id="33504937" Language="SFX">
+					<ShortName>fountain.wav</ShortName>
+					<Path>SFX/fountain_F17FB28C.wem</Path>
+				</File>
 				<File Id="72377158" Language="SFX">
 					<ShortName>Engine Start.wav</ShortName>
 					<Path>SFX/Engine Start_E46FFF3D.wem</Path>
@@ -60,6 +64,10 @@
 				<File Id="125857480" Language="SFX">
 					<ShortName>Part 3 drums.wav</ShortName>
 					<Path>SFX/Part 3 drums_F17FB28C.wem</Path>
+				</File>
+				<File Id="132936666" Language="SFX">
+					<ShortName>NEON.wav</ShortName>
+					<Path>SFX/NEON_F17FB28C.wem</Path>
 				</File>
 				<File Id="165568013" Language="SFX">
 					<ShortName>Part 1 drums.wav</ShortName>
@@ -137,9 +145,17 @@
 					<ShortName>Part 3 voicebox.wav</ShortName>
 					<Path>SFX/Part 3 voicebox_F17FB28C.wem</Path>
 				</File>
+				<File Id="603320399" Language="SFX">
+					<ShortName>Traffic Horns 1.wav</ShortName>
+					<Path>SFX/Traffic Horns 1_1C9C67B2.wem</Path>
+				</File>
 				<File Id="705200138" Language="SFX">
 					<ShortName>Part 3 riff.wav</ShortName>
 					<Path>SFX/Part 3 riff_F17FB28C.wem</Path>
+				</File>
+				<File Id="732294080" Language="SFX">
+					<ShortName>Traffic 1.wav</ShortName>
+					<Path>SFX/Traffic 1_F17FB28C.wem</Path>
 				</File>
 				<File Id="770574668" Language="SFX">
 					<ShortName>Part 2 riff.wav</ShortName>
@@ -180,6 +196,10 @@
 				<File Id="954874908" Language="SFX">
 					<ShortName>forward medium.wav</ShortName>
 					<Path>SFX/forward medium_F17FB28C.wem</Path>
+				</File>
+				<File Id="994158890" Language="SFX">
+					<ShortName>suburbs 1.wav</ShortName>
+					<Path>SFX/suburbs 1_F17FB28C.wem</Path>
 				</File>
 				<File Id="1009567859" Language="SFX">
 					<ShortName>Part 2 guitar.wav</ShortName>

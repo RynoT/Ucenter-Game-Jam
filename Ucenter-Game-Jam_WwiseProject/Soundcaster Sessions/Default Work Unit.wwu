@@ -45,7 +45,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Frustration" ID="{7ED64386-FA76-46F3-B93E-7D05C5888536}"/>
-							<Value>44</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Fuel" ID="{718CE9F8-A53F-4E48-8E4B-ADF40D6783E4}"/>
@@ -53,7 +53,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="music_4" ID="{538F95B3-EDFB-4B2F-970C-835D1BAEDB9C}"/>
+						<CurrentStateRef Name="music_3" ID="{EA504387-CE99-4CBC-B6B0-8A50BB2D12ED}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

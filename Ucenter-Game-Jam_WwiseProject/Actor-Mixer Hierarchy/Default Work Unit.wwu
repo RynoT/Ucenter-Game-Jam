@@ -719,11 +719,6 @@
 				</ActorMixer>
 				<ActorMixer Name="Environment" ID="{6B8B82FA-5A73-4658-A0BF-21D71FC78CB2}" ShortID="877193996">
 					<PropertyList>
-						<Property Name="Inclusion" Type="bool">
-							<ValueList>
-								<Value>False</Value>
-							</ValueList>
-						</Property>
 						<Property Name="Lowpass" Type="int16">
 							<RTPCList>
 								<RTPC Name="" ID="{9EAD0265-08DE-48ED-9921-C16434AF2FA6}" ShortID="365754019">

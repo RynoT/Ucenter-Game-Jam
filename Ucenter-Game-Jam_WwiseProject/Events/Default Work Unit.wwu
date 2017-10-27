@@ -91,6 +91,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{7F97DA4F-B2CD-4DC4-B602-9693FF657059}" ShortID="764217592">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="NeonBuilding" ID="{F8F68ADD-91FA-4CA8-9DEC-FC79AF2B1078}" WorkUnitID="{DA08B4A4-0758-47F7-849D-AE9E8D4EB3D1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Car_Forward" ID="{C70D8B99-B8C0-4718-A656-5DEFE14BD3A8}">

@@ -8,6 +8,8 @@
 						<ObjectRef Name="Default Work Unit" ID="{F8772D31-9C8C-4096-AFDC-C99E719A2E51}" WorkUnitID="{F8772D31-9C8C-4096-AFDC-C99E719A2E51}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Default Work Unit" ID="{DA08B4A4-0758-47F7-849D-AE9E8D4EB3D1}" WorkUnitID="{DA08B4A4-0758-47F7-849D-AE9E8D4EB3D1}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Default Work Unit" ID="{759B1F06-D9C3-4BB2-99C4-830D26E2627B}" WorkUnitID="{759B1F06-D9C3-4BB2-99C4-830D26E2627B}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="NeonBuilding" ID="{F8F68ADD-91FA-4CA8-9DEC-FC79AF2B1078}" WorkUnitID="{DA08B4A4-0758-47F7-849D-AE9E8D4EB3D1}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Pressure" ID="{C29A9EA9-B46F-4F94-89DD-F22BF66B3C30}" WorkUnitID="{DA08B4A4-0758-47F7-849D-AE9E8D4EB3D1}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
