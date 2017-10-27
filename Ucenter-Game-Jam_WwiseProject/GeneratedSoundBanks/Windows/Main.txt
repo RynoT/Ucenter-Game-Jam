@@ -2,8 +2,12 @@ Event	ID	Name			Wwise Object Path	Notes
 	627693719	Car_Forward			\Default Work Unit\Car_Forward	
 	733168346	Game_Start			\Default Work Unit\Game_Start	
 	1300784916	Start_Engine			\Default Work Unit\Start_Engine	
+	1301570889	Neon			\Default Work Unit\Neon	
+	1362338037	Fountain			\Default Work Unit\Fountain	
 	1465464336	Car_Stop			\Default Work Unit\Car_Stop	
+	2883395093	Suburbs			\Default Work Unit\Suburbs	
 	3370073757	Car_Turn			\Default Work Unit\Car_Turn	
+	3463109076	Traffic			\Default Work Unit\Traffic	
 	4160219795	Car_Horn			\Default Work Unit\Car_Horn	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes

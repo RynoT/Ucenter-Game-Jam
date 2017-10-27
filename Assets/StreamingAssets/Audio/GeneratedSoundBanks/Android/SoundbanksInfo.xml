@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="11" SoundbankVersion="125">
+	<RootPaths>
+		<ProjectRoot>/Users/pauldb/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Tethered/Game Projects/Beijing Game Jam/Github/Ucenter-Game-Jam/Ucenter-Game-Jam_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/pauldb/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Tethered/Game Projects/Beijing Game Jam/Github/Ucenter-Game-Jam/Ucenter-Game-Jam_WwiseProject/.cache/Android/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/pauldb/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Tethered/Game Projects/Beijing Game Jam/Github/Ucenter-Game-Jam/Ucenter-Game-Jam_WwiseProject/GeneratedSoundBanks/Android/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/pauldb/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Tethered/Game Projects/Beijing Game Jam/Github/Ucenter-Game-Jam/Ucenter-Game-Jam_WwiseProject/GeneratedSoundBanks/Android/</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="627693719" Name="Car_Forward" ObjectPath="\Events\Default Work Unit\Car_Forward"/>
+				<Event Id="4160219795" Name="Car_Horn" ObjectPath="\Events\Default Work Unit\Car_Horn"/>
+				<Event Id="1465464336" Name="Car_Stop" ObjectPath="\Events\Default Work Unit\Car_Stop"/>
+				<Event Id="3370073757" Name="Car_Turn" ObjectPath="\Events\Default Work Unit\Car_Turn"/>
+				<Event Id="733168346" Name="Game_Start" ObjectPath="\Events\Default Work Unit\Game_Start"/>
+				<Event Id="1300784916" Name="Start_Engine" ObjectPath="\Events\Default Work Unit\Start_Engine"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="12189064" Language="SFX">
+					<ShortName>Part 1 riff.wav</ShortName>
+					<Path>SFX/Part 1 riff_F17FB28C.wem</Path>
+				</File>
+				<File Id="28661970" Language="SFX">
+					<ShortName>Part 2 voicebox.wav</ShortName>
+					<Path>SFX/Part 2 voicebox_F17FB28C.wem</Path>
+				</File>
+				<File Id="33504937" Language="SFX">
+					<ShortName>fountain.wav</ShortName>
+					<Path>SFX/fountain_F17FB28C.wem</Path>
+				</File>
+				<File Id="72377158" Language="SFX">
+					<ShortName>Engine Start.wav</ShortName>
+					<Path>SFX/Engine Start_E46FFF3D.wem</Path>
+				</File>
+				<File Id="72406815" Language="SFX">
+					<ShortName>Part 2 piano.wav</ShortName>
+					<Path>SFX/Part 2 piano_F17FB28C.wem</Path>
+				</File>
+				<File Id="108515485" Language="SFX">
+					<ShortName>Part 2 riff bass.wav</ShortName>
+					<Path>SFX/Part 2 riff bass_F17FB28C.wem</Path>
+				</File>
+				<File Id="111772180" Language="SFX">
+					<ShortName>Part 3 sine.wav</ShortName>
+					<Path>SFX/Part 3 sine_F17FB28C.wem</Path>
+				</File>
+				<File Id="122039195" Language="SFX">
+					<ShortName>Pressure drums2.wav</ShortName>
+					<Path>SFX/Pressure drums2_F17FB28C.wem</Path>
+				</File>
+				<File Id="125857480" Language="SFX">
+					<ShortName>Part 3 drums.wav</ShortName>
+					<Path>SFX/Part 3 drums_F17FB28C.wem</Path>
+				</File>
+				<File Id="132936666" Language="SFX">
+					<ShortName>NEON.wav</ShortName>
+					<Path>SFX/NEON_F17FB28C.wem</Path>
+				</File>
+				<File Id="165568013" Language="SFX">
+					<ShortName>Part 1 drums.wav</ShortName>
+					<Path>SFX/Part 1 drums_F17FB28C.wem</Path>
+				</File>
+				<File Id="193946453" Language="SFX">
+					<ShortName>Part 2 drums.wav</ShortName>
+					<Path>SFX/Part 2 drums_F17FB28C.wem</Path>
+				</File>
+				<File Id="206457318" Language="SFX">
+					<ShortName>wind.wav</ShortName>
+					<Path>SFX/wind_F17FB28C.wem</Path>
+				</File>
+				<File Id="213454739" Language="SFX">
+					<ShortName>Part 1 riff bass.wav</ShortName>
+					<Path>SFX/Part 1 riff bass_F17FB28C.wem</Path>
+				</File>
+				<File Id="226065376" Language="SFX">
+					<ShortName>tyre squeal 6.wav</ShortName>
+					<Path>SFX/tyre squeal 6_1C9C67B2.wem</Path>
+				</File>
+				<File Id="262583514" Language="SFX">
+					<ShortName>tyre squeal 3.wav</ShortName>
+					<Path>SFX/tyre squeal 3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="285705725" Language="SFX">
+					<ShortName>Accelerate.wav</ShortName>
+					<Path>SFX/Accelerate_D2F44C15.wem</Path>
+				</File>
+				<File Id="340982495" Language="SFX">
+					<ShortName>forward fast.wav</ShortName>
+					<Path>SFX/forward fast_F17FB28C.wem</Path>
+				</File>
+				<File Id="386667382" Language="SFX">
+					<ShortName>tyre squeal 1.wav</ShortName>
+					<Path>SFX/tyre squeal 1_1C9C67B2.wem</Path>
+				</File>
+				<File Id="390917692" Language="SFX">
+					<ShortName>Part 4 riff.wav</ShortName>
+					<Path>SFX/Part 4 riff_F17FB28C.wem</Path>
+				</File>
+				<File Id="439092489" Language="SFX">
+					<ShortName>Part 4 voicebox.wav</ShortName>
+					<Path>SFX/Part 4 voicebox_F17FB28C.wem</Path>
+				</File>
+				<File Id="441102461" Language="SFX">
+					<ShortName>Part 3 riff bass.wav</ShortName>
+					<Path>SFX/Part 3 riff bass_F17FB28C.wem</Path>
+				</File>
+				<File Id="489375110" Language="SFX">
+					<ShortName>Part 4 guitar.wav</ShortName>
+					<Path>SFX/Part 4 guitar_F17FB28C.wem</Path>
+				</File>
+				<File Id="538299749" Language="SFX">
+					<ShortName>Part 4 voicebox drone.wav</ShortName>
+					<Path>SFX/Part 4 voicebox drone_F17FB28C.wem</Path>
+				</File>
+				<File Id="541647630" Language="SFX">
+					<ShortName>Accelerate 2.wav</ShortName>
+					<Path>SFX/Accelerate 2_FC9F901E.wem</Path>
+				</File>
+				<File Id="555637963" Language="SFX">
+					<ShortName>tyre squeal 5.wav</ShortName>
+					<Path>SFX/tyre squeal 5_1C9C67B2.wem</Path>
+				</File>
+				<File Id="575448449" Language="SFX">
+					<ShortName>Engine Idle 3.wav</ShortName>
+					<Path>SFX/Engine Idle 3_F17FB28C.wem</Path>
+				</File>
+				<File Id="593012471" Language="SFX">
+					<ShortName>Horn 2.wav</ShortName>
+					<Path>SFX/Horn 2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="599659058" Language="SFX">
+					<ShortName>Part 3 voicebox.wav</ShortName>
+					<Path>SFX/Part 3 voicebox_F17FB28C.wem</Path>
+				</File>
+				<File Id="603320399" Language="SFX">
+					<ShortName>Traffic Horns 1.wav</ShortName>
+					<Path>SFX/Traffic Horns 1_1C9C67B2.wem</Path>
+				</File>
+				<File Id="705200138" Language="SFX">
+					<ShortName>Part 3 riff.wav</ShortName>
+					<Path>SFX/Part 3 riff_F17FB28C.wem</Path>
+				</File>
+				<File Id="732294080" Language="SFX">
+					<ShortName>Traffic 1.wav</ShortName>
+					<Path>SFX/Traffic 1_F17FB28C.wem</Path>
+				</File>
+				<File Id="770574668" Language="SFX">
+					<ShortName>Part 2 riff.wav</ShortName>
+					<Path>SFX/Part 2 riff_F17FB28C.wem</Path>
+				</File>
+				<File Id="857288592" Language="SFX">
+					<ShortName>tyre squeal 4.wav</ShortName>
+					<Path>SFX/tyre squeal 4_1C9C67B2.wem</Path>
+				</File>
+				<File Id="858387540" Language="SFX">
+					<ShortName>Part 4 drums.wav</ShortName>
+					<Path>SFX/Part 4 drums_F17FB28C.wem</Path>
+				</File>
+				<File Id="860426230" Language="SFX">
+					<ShortName>Horn 1.wav</ShortName>
+					<Path>SFX/Horn 1_1C9C67B2.wem</Path>
+				</File>
+				<File Id="894094052" Language="SFX">
+					<ShortName>Part 3 piano.wav</ShortName>
+					<Path>SFX/Part 3 piano_F17FB28C.wem</Path>
+				</File>
+				<File Id="912185589" Language="SFX">
+					<ShortName>Part 4 riff bass.wav</ShortName>
+					<Path>SFX/Part 4 riff bass_F17FB28C.wem</Path>
+				</File>
+				<File Id="914715921" Language="SFX">
+					<ShortName>forward slow.wav</ShortName>
+					<Path>SFX/forward slow_F17FB28C.wem</Path>
+				</File>
+				<File Id="939233769" Language="SFX">
+					<ShortName>tyre squeal 2.wav</ShortName>
+					<Path>SFX/tyre squeal 2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="952477697" Language="SFX">
+					<ShortName>Part 2 sine.wav</ShortName>
+					<Path>SFX/Part 2 sine_F17FB28C.wem</Path>
+				</File>
+				<File Id="954874908" Language="SFX">
+					<ShortName>forward medium.wav</ShortName>
+					<Path>SFX/forward medium_F17FB28C.wem</Path>
+				</File>
+				<File Id="994158890" Language="SFX">
+					<ShortName>suburbs 1.wav</ShortName>
+					<Path>SFX/suburbs 1_F17FB28C.wem</Path>
+				</File>
+				<File Id="1009567859" Language="SFX">
+					<ShortName>Part 2 guitar.wav</ShortName>
+					<Path>SFX/Part 2 guitar_F17FB28C.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

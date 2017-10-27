@@ -4,11 +4,15 @@
 		<UserProjectSettings Name="" ID="{2FD3A935-C4DB-4326-AA8E-CCB56980B1DF}">
 			<PropertyList>
 				<Property Name="Event Action List\{0E4A7DC2-6D11-4812-9DA1-C979B0E7C01D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{0F8FDC70-0A61-4B28-891E-84B60389643D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{2436A28D-C5C1-46DF-8EB0-1CDFDA80E002}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5A5F92D8-AD58-4A1C-BCF2-BF337146D792}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{652B8397-3BE6-40DC-988C-476214CDF6C0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7E57062E-484D-47BA-BC75-9A2B00D52BB8}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C589966E-2900-4819-934C-07F4ECA3C57D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{C70D8B99-B8C0-4718-A656-5DEFE14BD3A8}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{F733A6F6-7045-41E7-BBCA-27EA17F88990}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{F992E707-565C-4CC6-9B45-3F42FB268277}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
@@ -79,7 +83,7 @@
 				<Property Name="PluginUserAcknowledge\iZotope Hybrid Reverb" Type="bool" Value="True"/>
 				<Property Name="ProjectExplorer\FirstVisible_10_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
-				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{4C81A597-7CC1-43DF-B675-39F8F7E0443D}"/>
+				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{BC070E51-1822-4AC4-8B07-72FA96A522B4}"/>
 				<Property Name="ProjectExplorer\FirstVisible_3_1" Type="string" Value="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}"/>
 				<Property Name="ProjectExplorer\FirstVisible_4_1" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
 				<Property Name="ProjectExplorer\FirstVisible_6_1" Type="string" Value="{C98E673F-A24C-48A8-960F-10565FFE70A0}"/>
@@ -105,18 +109,19 @@
 				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value="om/pBJCl6kuj8Us5y2hQ+g=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value=""/>
 				<Property Name="RTPC\GameParameterSimValue\{718CE9F8-A53F-4E48-8E4B-ADF40D6783E4}" Type="Real64" Value="50"/>
-				<Property Name="RTPC\GameParameterSimValue\{7ED64386-FA76-46F3-B93E-7D05C5888536}" Type="Real64" Value="0"/>
-				<Property Name="RTPC\GameParameterSimValue\{CEAE7B61-8CAC-4587-BACD-8136C9778638}" Type="Real64" Value="0"/>
-				<Property Name="RTPC\GameParameterSimValue\{F196F789-FFD3-4327-810A-DDD3B8FC8FBA}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{7ED64386-FA76-46F3-B93E-7D05C5888536}" Type="Real64" Value="50"/>
+				<Property Name="RTPC\GameParameterSimValue\{CEAE7B61-8CAC-4587-BACD-8136C9778638}" Type="Real64" Value="50"/>
+				<Property Name="RTPC\GameParameterSimValue\{F196F789-FFD3-4327-810A-DDD3B8FC8FBA}" Type="Real64" Value="50"/>
 				<Property Name="SettingsUserOverride" Type="bool" Value="True"/>
 				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value="43tzDcdhNUyXHesU2yigBQ=="/>
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
-				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
+				<Property Name="SoundBankHeaderFilePath" Type="string" Value="..\Assets\StreamingAssets\Audio\GeneratedSoundBanks\"/>
+				<Property Name="SoundBankPathUserOverride" Type="bool" Value="True"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
-						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
-						<Value Platform="Android">GeneratedSoundBanks\Android\</Value>
-						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
+						<Value Platform="Mac">..\Assets\StreamingAssets\Audio\GeneratedSoundBanks\</Value>
+						<Value Platform="Android">..\Assets\StreamingAssets\Audio\GeneratedSoundBanks\</Value>
+						<Value Platform="Windows">..\Assets\StreamingAssets\Audio\GeneratedSoundBanks\</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">

@@ -1,0 +1,66 @@
+Event	ID	Name			Wwise Object Path	Notes
+	627693719	Car_Forward			\Default Work Unit\Car_Forward	
+	733168346	Game_Start			\Default Work Unit\Game_Start	
+	1300784916	Start_Engine			\Default Work Unit\Start_Engine	
+	1465464336	Car_Stop			\Default Work Unit\Car_Stop	
+	3370073757	Car_Turn			\Default Work Unit\Car_Turn	
+	4160219795	Car_Horn			\Default Work Unit\Car_Horn	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	587070286	Camera_Height			\Default Work Unit\Camera_Height	
+	2499973362	Frustration			\Default Work Unit\Frustration	
+	4164958897	Car_Speed			\Default Work Unit\Car_Speed	
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	226084608	Engine			\Default Work Unit\Engine	
+
+Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	12189064	Part 1 riff	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Part 1 riff_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Part 1\1\Part 1 riff		1540248
+	28661970	Part 2 voicebox	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Part 2 voicebox_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Part 2\1\Part 2 voicebox		1802440
+	33504937	fountain	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\fountain_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\fountain		1008144
+	72377158	Engine Start	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Engine Start_E46FFF3D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Car\Engine\Engine Start		315096
+	72406815	Part 2 piano	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Part 2 piano_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Part 2\1\Part 2 piano		1278152
+	108515485	Part 2 riff bass	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Part 2 riff bass_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Part 2\1\Part 2 riff bass		1540296
+	111772180	Part 3 sine	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Part 3 sine_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Part 3\1\Part 3 sine		1237240
+	122039195	Pressure drums2	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Pressure drums2_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Pressure\Pressure drums\Pressure drums2		1015960
+	125857480	Part 3 drums	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Part 3 drums_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Part 3\1\Part 3 drums		2588872
+	132936666	NEON	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\NEON_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\NeonBuilding\NEON\NEON		10453192
+	165568013	Part 1 drums	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Part 1 drums_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Part 1\1\Part 1 drums		2588872
+	193946453	Part 2 drums	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Part 2 drums_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Part 2\1\Part 2 drums		2588872
+	206457318	wind	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\wind_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clouds\wind		6805648
+	213454739	Part 1 riff bass	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Part 1 riff bass_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Part 1\1\Part 1 riff bass		1540248
+	226065376	tyre squeal 6	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\tyre squeal 6_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Car\Engine\Tyres\tyre squeal 6		252048
+	262583514	tyre squeal 3	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\tyre squeal 3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Car\Engine\Tyres\tyre squeal 3		252048
+	285705725	Accelerate	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Accelerate_D2F44C15.wem		\Actor-Mixer Hierarchy\Default Work Unit\Car\Engine\Forward\Accelerate\Accelerate		203740
+	340982495	forward fast	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\forward fast_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Car\Engine\Forward\Speed\forward fast		480144
+	386667382	tyre squeal 1	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\tyre squeal 1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Car\Engine\Tyres\tyre squeal 1		252048
+	390917692	Part 4 riff	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Part 4 riff_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Part 4\1\Part 4 riff		3375256
+	439092489	Part 4 voicebox	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Part 4 voicebox_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Part 4\1\Part 4 voicebox		3092760
+	441102461	Part 3 riff bass	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Part 3 riff bass_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Part 3\1\Part 3 riff bass		1540296
+	489375110	Part 4 guitar	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Part 4 guitar_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Part 4\1\Part 4 guitar		3113112
+	538299749	Part 4 voicebox drone	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Part 4 voicebox drone_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Part 4\1\Part 4 voicebox drone		3092760
+	541647630	Accelerate 2	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Accelerate 2_FC9F901E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Car\Engine\Forward\Accelerate\Accelerate 2		105316
+	555637963	tyre squeal 5	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\tyre squeal 5_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Car\Engine\Tyres\tyre squeal 5		252048
+	575448449	Engine Idle 3	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Engine Idle 3_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Car\Engine\Engine Idle 3		1184144
+	593012471	Horn 2	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Horn 2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Car\Engine\Horn\Horn 2		252048
+	599659058	Part 3 voicebox	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Part 3 voicebox_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Part 3\1\Part 3 voicebox		1237240
+	603320399	Traffic Horns 1	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Traffic Horns 1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Traffic Horns 1		8160144
+	705200138	Part 3 riff	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Part 3 riff_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Part 3\1\Part 3 riff		1540296
+	732294080	Traffic 1	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Traffic 1_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Traffic 1		9427088
+	770574668	Part 2 riff	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Part 2 riff_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Part 2\1\Part 2 riff		1540296
+	857288592	tyre squeal 4	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\tyre squeal 4_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Car\Engine\Tyres\tyre squeal 4		252048
+	858387540	Part 4 drums	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Part 4 drums_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Part 4\1\Part 4 drums		3899544
+	860426230	Horn 1	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Horn 1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Car\Engine\Horn\Horn 1		252048
+	894094052	Part 3 piano	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Part 3 piano_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Part 3\1\Part 3 piano		1278152
+	912185589	Part 4 riff bass	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Part 4 riff bass_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Part 4\1\Part 4 riff bass		3375256
+	914715921	forward slow	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\forward slow_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Car\Engine\Forward\Speed\forward slow		588144
+	939233769	tyre squeal 2	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\tyre squeal 2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Car\Engine\Tyres\tyre squeal 2		252048
+	952477697	Part 2 sine	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Part 2 sine_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Part 2\1\Part 2 sine		1540296
+	954874908	forward medium	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\forward medium_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Car\Engine\Forward\Speed\forward medium		720144
+	994158890	suburbs 1	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\suburbs 1_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\suburbs 1		1104144
+	1009567859	Part 2 guitar	Y:\Tethered\Game Projects\Beijing Game Jam\Github\Ucenter-Game-Jam\Ucenter-Game-Jam_WwiseProject\.cache\Mac\SFX\Part 2 guitar_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Part 2\1\Part 2 guitar		1540296
+

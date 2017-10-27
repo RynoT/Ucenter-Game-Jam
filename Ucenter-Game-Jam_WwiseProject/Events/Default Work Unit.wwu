@@ -54,6 +54,11 @@
 						<Action Name="" ID="{DAF98845-1541-468B-AECA-1FF8B068EB66}" ShortID="21301464">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -64,6 +69,11 @@
 						<Action Name="" ID="{7A352DD8-2F1A-4CFE-B75A-F4026DDE6551}" ShortID="226556403">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -74,6 +84,11 @@
 						<Action Name="" ID="{BBE9B154-DF04-44A6-8A11-BA868A620F70}" ShortID="868493348">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -94,6 +109,11 @@
 						<Action Name="" ID="{7F97DA4F-B2CD-4DC4-B602-9693FF657059}" ShortID="764217592">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -198,6 +218,62 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Horn" ID="{F14ED1CB-80F3-4923-9E0A-A071812137E0}" WorkUnitID="{759B1F06-D9C3-4BB2-99C4-830D26E2627B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Fountain" ID="{C589966E-2900-4819-934C-07F4ECA3C57D}">
+					<ChildrenList>
+						<Action Name="" ID="{625CD70F-C153-4E59-A705-6784BAE716C4}" ShortID="786087144">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="fountain" ID="{D751FFCC-28C6-4D19-B455-91BF6043552C}" WorkUnitID="{759B1F06-D9C3-4BB2-99C4-830D26E2627B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Suburbs" ID="{F733A6F6-7045-41E7-BBCA-27EA17F88990}">
+					<ChildrenList>
+						<Action Name="" ID="{774F8152-AC94-45F3-B847-607EC0AFAB4C}" ShortID="787665433">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="suburbs 1" ID="{310944DA-750B-42CF-B7E6-7049AD6007E2}" WorkUnitID="{759B1F06-D9C3-4BB2-99C4-830D26E2627B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Traffic" ID="{0F8FDC70-0A61-4B28-891E-84B60389643D}">
+					<ChildrenList>
+						<Action Name="" ID="{8A6D53DE-0E92-4771-AF07-9B0B99AF6697}" ShortID="98283356">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Traffic 1" ID="{4EA028FA-A4CE-43DE-B560-4CBFE310C521}" WorkUnitID="{759B1F06-D9C3-4BB2-99C4-830D26E2627B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Neon" ID="{F992E707-565C-4CC6-9B45-3F42FB268277}">
+					<ChildrenList>
+						<Action Name="" ID="{0BB9F71F-53EB-4D56-B515-DCDFA444AD2D}" ShortID="216814820">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="NeonBuilding" ID="{F8F68ADD-91FA-4CA8-9DEC-FC79AF2B1078}" WorkUnitID="{DA08B4A4-0758-47F7-849D-AE9E8D4EB3D1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
