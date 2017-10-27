@@ -19,7 +19,7 @@ public class CameraBind : MonoBehaviour
 		if (this.bound != null) 
 		{
 			Vector3 position = this.bound.transform.position;
-			this.transform.localPosition = new Vector3(position.x, position.y + this.height, position.z);
+			this.transform.position = new Vector3(position.x, position.y + this.height, position.z);
 		}
 	}
 
@@ -35,10 +35,11 @@ public class CameraBind : MonoBehaviour
 		target.y += this.height;
 
 		Vector3 frame = new Vector3();
-		frame.x = Mathf.Lerp(current.x, target.x, this.cameraSpeed.x * Time.deltaTime);
-		frame.y = Mathf.Lerp(current.y, target.y, this.cameraSpeed.y * Time.deltaTime);
-		frame.z = Mathf.Lerp(current.z, target.z, this.cameraSpeed.z * Time.deltaTime);
+         
+        frame.x = Mathf.SmoothDamp(current.x, target.x, ref this.cameraSpeed.x, Time.deltaTime);
+        frame.y = Mathf.SmoothDamp(current.y, target.y, ref this.cameraSpeed.y, Time.deltaTime);
+        frame.z = Mathf.SmoothDamp(current.z, target.z, ref this.cameraSpeed.z, Time.deltaTime);
 
-		this.transform.localPosition = frame;
+		this.transform.position = target;
 	}
 }

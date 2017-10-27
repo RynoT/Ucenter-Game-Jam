@@ -29,7 +29,7 @@ public class CarController : MonoBehaviour {
         Vector3 direction = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
         Quaternion rotation = base.gameObject.transform.rotation;
 
-        body.AddForce(this.velocityPower * (rotation * Quaternion.Euler(0.0f, -90.0f, 0.0f) * new Vector3(0.0f, 0.0f, direction.z)));
+        body.AddForce(this.velocityPower * (rotation * Quaternion.Euler(0.0f, -90.0f, 0.0f) * new Vector3(0.0f, 0.0f, direction.z)) * Time.deltaTime);
         
         // Rotation
         float speed = Mathf.Min(body.velocity.magnitude, this.velocityRequiredForRot) / this.velocityRequiredForRot;
