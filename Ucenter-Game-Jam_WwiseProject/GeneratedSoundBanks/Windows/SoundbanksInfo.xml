@@ -25,8 +25,12 @@
 				<Event Id="4160219795" Name="Car_Horn" ObjectPath="\Events\Default Work Unit\Car_Horn"/>
 				<Event Id="1465464336" Name="Car_Stop" ObjectPath="\Events\Default Work Unit\Car_Stop"/>
 				<Event Id="3370073757" Name="Car_Turn" ObjectPath="\Events\Default Work Unit\Car_Turn"/>
+				<Event Id="1362338037" Name="Fountain" ObjectPath="\Events\Default Work Unit\Fountain" MaxAttenuation="100.000000"/>
 				<Event Id="733168346" Name="Game_Start" ObjectPath="\Events\Default Work Unit\Game_Start"/>
+				<Event Id="1301570889" Name="Neon" ObjectPath="\Events\Default Work Unit\Neon" MaxAttenuation="100.000000"/>
 				<Event Id="1300784916" Name="Start_Engine" ObjectPath="\Events\Default Work Unit\Start_Engine"/>
+				<Event Id="2883395093" Name="Suburbs" ObjectPath="\Events\Default Work Unit\Suburbs" MaxAttenuation="100.000000"/>
+				<Event Id="3463109076" Name="Traffic" ObjectPath="\Events\Default Work Unit\Traffic" MaxAttenuation="100.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="12189064" Language="SFX">
