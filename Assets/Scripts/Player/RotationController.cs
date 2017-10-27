@@ -2,19 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour {
+public class RotationController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Debug.Log ("xx");
-	}
-
-	void Awake() {
-		Debug.Log ("dd");
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		//Debug.Log ("a");
+		
 	}
 }
