@@ -3,9 +3,6 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{04E96FA2-A590-4BEA-A3F1-4B39CB6850FA}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="Frustration" ID="{7ED64386-FA76-46F3-B93E-7D05C5888536}"/>
-				<GameParameter Name="Fuel" ID="{718CE9F8-A53F-4E48-8E4B-ADF40D6783E4}"/>
-				<GameParameter Name="Camera_Height" ID="{F196F789-FFD3-4327-810A-DDD3B8FC8FBA}"/>
 				<GameParameter Name="Car_Speed" ID="{CEAE7B61-8CAC-4587-BACD-8136C9778638}"/>
 			</ChildrenList>
 		</WorkUnit>

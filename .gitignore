@@ -33,4 +33,10 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
-Assets/Wwise/Editor/ProjectData/
+/Ucenter-Game-Jam_WwiseProject/.cache/
+/Ucenter-Game-Jam_WwiseProject/.backup/
+/Ucenter-Game-Jam_WwiseProject/*.validationcache
+/Ucenter-Game-Jam_WwiseProject/*.wsettings
+/Ucenter-Game-Jam_WwiseProject/*.wproj_migration.log
+/Ucenter-Game-Jam_WwiseProject/GeneratedSoundBanks/
+/Ucenter-Game-Jam_WwiseProject/Originals/SFX/*.akd

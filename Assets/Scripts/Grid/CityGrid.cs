@@ -40,7 +40,10 @@ public class CityGrid : MonoBehaviour
             int x = (int)(transform.position.x / this.gridSize);
             int y = (int)(transform.position.z / this.gridSize);
             int index = x + y * width;
-            Debug.Assert(grid[index] == GridItemType.UNSET, "Two grid items overlap. The grid size is probably wrong.");
+            if (index < 0)
+                continue;
+            //if(grid[index] != GridItemType.UNSET)continue;
+            //Debug.Assert(grid[index] == GridItemType.UNSET, "Two grid items overlap. The grid size is probably wrong.");
 
             GridItemType type = GridItemType.UNKNOWN;
             switch (transform.gameObject.tag)

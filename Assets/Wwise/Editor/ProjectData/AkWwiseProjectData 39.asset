@@ -1,0 +1,334 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 599c1cbe0e1d849eea2591023eb60469, type: 3}
+  m_Name: AkWwiseProjectData 39
+  m_EditorClassIdentifier: 
+  CurrentPluginConfig: 
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{F8772D31-9C8C-4096-AFDC-C99E719A2E51}'
+    m_lastTimePsrt1: -368490844
+    m_lastTimePart2: -1999299167
+    List:
+    - Name: Car_Forward
+      Path: Default Work Unit\Car\Car_Forward
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Car
+        ObjectType: 4
+      - ElementName: Car_Forward
+        ObjectType: 3
+      ID: 627693719
+      Guid: 998b0dc7c0b81847a6565defe14bd3a8
+      maxAttenuation: 0
+    - Name: Car_Horn
+      Path: Default Work Unit\Car\Car_Horn
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Car
+        ObjectType: 4
+      - ElementName: Car_Horn
+        ObjectType: 3
+      ID: -134747501
+      Guid: d8925f5a58ad1c4abcf2bf337146d792
+      maxAttenuation: 0
+    - Name: Car_Stop
+      Path: Default Work Unit\Car\Car_Stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Car
+        ObjectType: 4
+      - ElementName: Car_Stop
+        ObjectType: 3
+      ID: 1465464336
+      Guid: 97832b65e63bdc40988c476214cdf6c0
+      maxAttenuation: 0
+    - Name: Car_Turn
+      Path: Default Work Unit\Car\Car_Turn
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Car
+        ObjectType: 4
+      - ElementName: Car_Turn
+        ObjectType: 3
+      ID: -924893539
+      Guid: 2e06577e4d48ba47bc759a2b00d52bb8
+      maxAttenuation: 0
+    - Name: Fail
+      Path: Default Work Unit\People\Fail
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: People
+        ObjectType: 4
+      - ElementName: Fail
+        ObjectType: 3
+      ID: -1698694679
+      Guid: f80cf235c5a2df40a1cd09504642e3a9
+      maxAttenuation: 0
+    - Name: Fountain
+      Path: Default Work Unit\Areas\Fountain
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Areas
+        ObjectType: 4
+      - ElementName: Fountain
+        ObjectType: 3
+      ID: 1362338037
+      Guid: 6e9689c500291948934c07f4eca3c57d
+      maxAttenuation: 100
+    - Name: Game_Start
+      Path: Default Work Unit\Game_Start
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Game_Start
+        ObjectType: 3
+      ID: 733168346
+      Guid: c27d4a0e116d12489da1c979b0e7c01d
+      maxAttenuation: 0
+    - Name: Neon
+      Path: Default Work Unit\Areas\Neon
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Areas
+        ObjectType: 4
+      - ElementName: Neon
+        ObjectType: 3
+      ID: 1301570889
+      Guid: 07e792f95c56c64c9b453f42fb268277
+      maxAttenuation: 100
+    - Name: Pick_up
+      Path: Default Work Unit\People\Pick_up
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: People
+        ObjectType: 4
+      - ElementName: Pick_up
+        ObjectType: 3
+      ID: 467838998
+      Guid: 1b85fa0fa2ba7e488446f47c2b34776d
+      maxAttenuation: 0
+    - Name: Start_Engine
+      Path: Default Work Unit\Car\Start_Engine
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Car
+        ObjectType: 4
+      - ElementName: Start_Engine
+        ObjectType: 3
+      ID: 1300784916
+      Guid: 8da23624c1c5df468eb01cdfda80e002
+      maxAttenuation: 0
+    - Name: Suburbs
+      Path: Default Work Unit\Areas\Suburbs
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Areas
+        ObjectType: 4
+      - ElementName: Suburbs
+        ObjectType: 3
+      ID: -1411572203
+      Guid: f6a633f74570e741bbca27ea17f88990
+      maxAttenuation: 100
+    - Name: Traffic
+      Path: Default Work Unit\Areas\Traffic
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Areas
+        ObjectType: 4
+      - ElementName: Traffic
+        ObjectType: 3
+      ID: -831858220
+      Guid: 70dc8f0f610a284b891e84b60389643d
+      maxAttenuation: 100
+    - Name: Win
+      Path: Default Work Unit\People\Win
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: People
+        ObjectType: 4
+      - ElementName: Win
+        ObjectType: 3
+      ID: 979765101
+      Guid: 9bbe9e95abc41b438285589f8de9495e
+      maxAttenuation: 0
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{B5328305-74BF-4EA8-80C0-2511EC7345EA}'
+    m_lastTimePsrt1: 387846528
+    m_lastTimePart2: -1999299241
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{9EEDBD1A-FD03-4404-95EF-DAE95199D785}'
+    m_lastTimePsrt1: -898232704
+    m_lastTimePart2: -1999299275
+    List:
+    - Name: Music
+      Path: Default Work Unit\Music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 9
+      ID: -303024426
+      Guid: d896b7f8c0086b489ed10c987bd486c4
+      values:
+      - music_1
+      - music_2
+      - music_3
+      - music_4
+      - None
+      - start
+      ValueIcons:
+      - ElementName: music_1
+        ObjectType: 8
+      - ElementName: music_2
+        ObjectType: 8
+      - ElementName: music_3
+        ObjectType: 8
+      - ElementName: music_4
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      - ElementName: start
+        ObjectType: 8
+      valueIDs: b63f541eb53f541eb43f541eb33f541edb3ba32cf7e1664c
+      ValueGuids:
+      - bytes: e756d6e185abfd4e8dd329a4e8c76f04
+      - bytes: 74eb051a585a1645a3891d62385daac7
+      - bytes: 874350ea99cebc4cb6b08a50bb2d12ed
+      - bytes: b3958f53fbed2f4b970c835d1baedb9c
+      - bytes: 54a68f37c673b94c9cb0906e7c875c7d
+      - bytes: 75dc02c5370204458b0ce994d3235290
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{BB14AAF2-332B-4F65-86CC-A1CB9886B629}'
+    m_lastTimePsrt1: 304318208
+    m_lastTimePart2: -1999299196
+    List:
+    - Name: Man
+      Path: Default Work Unit\Man
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Man
+        ObjectType: 11
+      ID: 1048449627
+      Guid: 7b7cc73698f57b4f8292039ba5d2662b
+      values:
+      - Bye
+      - Hello
+      - Talk
+      ValueIcons:
+      - ElementName: Bye
+        ObjectType: 10
+      - ElementName: Hello
+        ObjectType: 10
+      - ElementName: Talk
+        ObjectType: 10
+      valueIDs: 7fdc99366771fab6bf1223bd
+      ValueGuids:
+      - bytes: 22a58a2da4402a43b508feab237752fd
+      - bytes: 9d6ad3cb54ed2c4a81a34350bb3afacd
+      - bytes: cc4541b5f985d84cb0f7397ee9ac69e9
+    - Name: Woman
+      Path: Default Work Unit\Woman
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Woman
+        ObjectType: 11
+      ID: -1632118427
+      Guid: ef4797e5d65eca419aa34334c073d2ba
+      values:
+      - Bye
+      - Hello
+      - Talk
+      ValueIcons:
+      - ElementName: Bye
+        ObjectType: 10
+      - ElementName: Hello
+        ObjectType: 10
+      - ElementName: Talk
+        ObjectType: 10
+      valueIDs: 7fdc99366771fab6bf1223bd
+      ValueGuids:
+      - bytes: 49f6675c856880428ae938555fa82f36
+      - bytes: b21b90c8cff5314ea726afaface04448
+      - bytes: 4815b61273fd81418186a7e72bdaed3c
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{0D737BE3-61C7-4C35-971D-EB14DB28A005}'
+    m_lastTimePsrt1: -151368576
+    m_lastTimePart2: -1999299218
+    List:
+    - Name: Main
+      Path: Default Work Unit\Main
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main
+        ObjectType: 7
+      ID: -1133058374
+      Guid: 53783e7f053ac54e9dd65af5aa6ec694
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{04E96FA2-A590-4BEA-A3F1-4B39CB6850FA}'
+    m_lastTimePsrt1: 410975377
+    m_lastTimePart2: -1999299167
+    List:
+    - Name: Car_Speed
+      Path: Default Work Unit\Car_Speed
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Car_Speed
+        ObjectType: 13
+      ID: -130008399
+      Guid: 617baeceac8c8745bacd8136c9778638
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{825930E6-137D-401C-9713-2D82A831AD34}'
+    m_lastTimePsrt1: -1987055360
+    m_lastTimePart2: -1999299239
+    List: []
+  ExpandedItems: []
+  m_lastPopulateTimePsrt1: 0
+  m_lastPopulateTimePart2: 0
+  autoPopulateEnabled: 1
+  basePath: Audio\GeneratedSoundBanks
+  language: English(US)
+  defaultPoolSize: 4096
+  lowerPoolSize: 2048
+  streamingPoolSize: 1024
+  preparePoolSize: 0
+  memoryCutoffThreshold: 0.95
+  callbackManagerBufferSize: 4

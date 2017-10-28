@@ -36,7 +36,6 @@ public class CameraBind : MonoBehaviour
 		{
 			return;
 		}
-		// Height interpolate
         Vector3 current = this.transform.position, target = this.bound.transform.position;
 
 		Vector3 frame = new Vector3();

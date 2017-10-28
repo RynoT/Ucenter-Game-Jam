@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{BB14AAF2-332B-4F65-86CC-A1CB9886B629}" SchemaVersion="80">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{BB14AAF2-332B-4F65-86CC-A1CB9886B629}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{BB14AAF2-332B-4F65-86CC-A1CB9886B629}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Man" ID="{36C77C7B-F598-4F7B-8292-039BA5D2662B}">
+					<ChildrenList>
+						<Switch Name="Hello" ID="{CBD36A9D-ED54-4A2C-81A3-4350BB3AFACD}"/>
+						<Switch Name="Talk" ID="{B54145CC-85F9-4CD8-B0F7-397EE9AC69E9}"/>
+						<Switch Name="Bye" ID="{2D8AA522-40A4-432A-B508-FEAB237752FD}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Woman" ID="{E59747EF-5ED6-41CA-9AA3-4334C073D2BA}">
+					<ChildrenList>
+						<Switch Name="Hello" ID="{C8901BB2-F5CF-4E31-A726-AFAFACE04448}"/>
+						<Switch Name="Talk" ID="{12B61548-FD73-4181-8186-A7E72BDAED3C}"/>
+						<Switch Name="Bye" ID="{5C67F649-6885-4280-8AE9-38555FA82F36}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

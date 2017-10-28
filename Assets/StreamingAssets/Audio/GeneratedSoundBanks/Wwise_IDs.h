@@ -17,12 +17,15 @@ namespace AK
         static const AkUniqueID CAR_HORN = 4160219795U;
         static const AkUniqueID CAR_STOP = 1465464336U;
         static const AkUniqueID CAR_TURN = 3370073757U;
+        static const AkUniqueID FAIL = 2596272617U;
         static const AkUniqueID FOUNTAIN = 1362338037U;
         static const AkUniqueID GAME_START = 733168346U;
         static const AkUniqueID NEON = 1301570889U;
+        static const AkUniqueID PICK_UP = 467838998U;
         static const AkUniqueID START_ENGINE = 1300784916U;
         static const AkUniqueID SUBURBS = 2883395093U;
         static const AkUniqueID TRAFFIC = 3463109076U;
+        static const AkUniqueID WIN = 979765101U;
     } // namespace EVENTS
 
     namespace STATES
@@ -43,12 +46,37 @@ namespace AK
 
     } // namespace STATES
 
+    namespace SWITCHES
+    {
+        namespace MAN
+        {
+            static const AkUniqueID GROUP = 1048449627U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BYE = 916053119U;
+                static const AkUniqueID HELLO = 3069866343U;
+                static const AkUniqueID TALK = 3173192383U;
+            } // namespace SWITCH
+        } // namespace MAN
+
+        namespace WOMAN
+        {
+            static const AkUniqueID GROUP = 2662848869U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BYE = 916053119U;
+                static const AkUniqueID HELLO = 3069866343U;
+                static const AkUniqueID TALK = 3173192383U;
+            } // namespace SWITCH
+        } // namespace WOMAN
+
+    } // namespace SWITCHES
+
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID CAMERA_HEIGHT = 587070286U;
         static const AkUniqueID CAR_SPEED = 4164958897U;
-        static const AkUniqueID FRUSTRATION = 2499973362U;
-        static const AkUniqueID FUEL = 2661514705U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

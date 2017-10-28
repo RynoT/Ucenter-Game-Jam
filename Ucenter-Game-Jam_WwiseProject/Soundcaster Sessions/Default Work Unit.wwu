@@ -22,6 +22,10 @@
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Win" ID="{959EBE9B-C4AB-431B-8285-589F8DE9495E}" WorkUnitID="{F8772D31-9C8C-4096-AFDC-C99E719A2E51}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Game_Start" ID="{0E4A7DC2-6D11-4812-9DA1-C979B0E7C01D}" WorkUnitID="{F8772D31-9C8C-4096-AFDC-C99E719A2E51}"/>
 							<Position X="2" Y="0"/>
 						</Module>
@@ -30,32 +34,31 @@
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Fail" ID="{35F20CF8-A2C5-40DF-A1CD-09504642E3A9}" WorkUnitID="{F8772D31-9C8C-4096-AFDC-C99E719A2E51}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Car_Forward" ID="{C70D8B99-B8C0-4718-A656-5DEFE14BD3A8}" WorkUnitID="{F8772D31-9C8C-4096-AFDC-C99E719A2E51}"/>
 							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Pick_up" ID="{0FFA851B-BAA2-487E-8446-F47C2B34776D}" WorkUnitID="{F8772D31-9C8C-4096-AFDC-C99E719A2E51}"/>
+							<Position X="4" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
-							<GameParameterRef Name="Camera_Height" ID="{F196F789-FFD3-4327-810A-DDD3B8FC8FBA}"/>
-							<Value>0</Value>
-						</RTPCValue>
-						<RTPCValue>
 							<GameParameterRef Name="Car_Speed" ID="{CEAE7B61-8CAC-4587-BACD-8136C9778638}"/>
-							<Value>0</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="Frustration" ID="{7ED64386-FA76-46F3-B93E-7D05C5888536}"/>
-							<Value>0</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="Fuel" ID="{718CE9F8-A53F-4E48-8E4B-ADF40D6783E4}"/>
-							<Value>50</Value>
+							<Value>100</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="music_3" ID="{EA504387-CE99-4CBC-B6B0-8A50BB2D12ED}"/>
+						<CurrentStateRef Name="start" ID="{C502DC75-0237-4504-8B0C-E994D3235290}"/>
 					</CurrentStateList>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Bye" ID="{5C67F649-6885-4280-8AE9-38555FA82F36}"/>
+						<CurrentSwitchRef Name="Bye" ID="{2D8AA522-40A4-432A-B508-FEAB237752FD}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>

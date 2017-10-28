@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DestinationPoint
   - Road
+  - Passenger
   layers:
   - Default
   - TransparentFX
