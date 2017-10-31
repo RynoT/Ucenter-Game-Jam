@@ -4,37 +4,38 @@ using UnityEngine;
 
 public class GameLogic : MonoBehaviour {
    
-    public CityGrid city;
-    public GameObject player;
-    public CanvasScript canvas;
+    public CityGrid City;
+    public GameObject Player;
+    public CanvasScript Canvas;
 
-    private float objectiveTimer = 0.0f, objectiveMinDelay = 1.0f, objectiveMaxDelay = 10.0f;
-    private DeliverObjective objective;
+    private float _objectiveTimer = 0.0f;
+    private readonly float _objectiveMinDelay = 1.0f, _objectiveMaxDelay = 10.0f;
+    private DeliverObjective _objective;
 	
 	public void FixedUpdate() {
-        if (this.city == null || this.player == null || this.canvas == null)
+        if (this.City == null || this.Player == null || this.Canvas == null)
         {
             return;
         }
-        if (this.objective == null)
+        if (this._objective == null)
         {
-            this.objectiveTimer += Time.deltaTime;
-            if (this.objectiveTimer >= this.objectiveMinDelay && (this.objectiveTimer >= this.objectiveMaxDelay || Random.Range(0.0f, 1.0f) < 0.01f))
+            this._objectiveTimer += Time.deltaTime;
+            if (this._objectiveTimer >= this._objectiveMinDelay && (this._objectiveTimer >= this._objectiveMaxDelay || Random.Range(0.0f, 1.0f) < 0.01f))
             {
-                this.canvas.waiting = false;
-                this.objective = base.gameObject.AddComponent<DeliverObjective>();
-                this.objective.init(ref this.city, ref this.player);
+                this.Canvas.Waiting = false;
+                this._objective = base.gameObject.AddComponent<DeliverObjective>();
+                this._objective.Init(ref this.City, ref this.Player);
             }
         }
         else
         {
-            if (this.objective.complete)
+            if (this._objective.Complete)
             {
-                Destroy(this.objective);
-                this.objective = null;
-                this.objectiveTimer = 0.0f;
-                this.canvas.waiting = true;
-                this.canvas.frustrationBar.percentage = 0.0f;
+                Destroy(this._objective);
+                this._objective = null;
+                this._objectiveTimer = 0.0f;
+                this.Canvas.Waiting = true;
+                this.Canvas.FrustrationBar.Percentage = 0.0f;
             }
         }
 	}

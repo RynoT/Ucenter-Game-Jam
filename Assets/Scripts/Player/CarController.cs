@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CarController : MonoBehaviour {
+public class CarController : MonoBehaviour
+{
 
-    public float speedPercentage = 0.0f;
-    public float maxSpeed = 3.5f;
+    public float SpeedPercentage = 0.0f;
+    public float MaxSpeed = 3.5f;
 
-    public float velocityPower = 15.0f;
-    public float rotationPower = 15.0f;
+    public float VelocityPower = 15.0f;
+    public float RotationPower = 15.0f;
 
-    public float velocityRequiredForRot = 2.0f;
+    public float VelocityRequiredForRot = 2.0f;
 
     public void Start()
     {
@@ -21,7 +22,7 @@ public class CarController : MonoBehaviour {
         }
     }
 
-    public void Update() 
+    public void Update()
     {
         Rigidbody body = base.GetComponent<Rigidbody>();
         if (body == null)
@@ -29,35 +30,34 @@ public class CarController : MonoBehaviour {
             return;
         }
         //Debug.Log(body.velocity.magnitude);
-        this.speedPercentage = Mathf.Min(body.velocity.magnitude / this.maxSpeed, 1.0f) * 100.0f;
+        this.SpeedPercentage = Mathf.Min(body.velocity.magnitude / this.MaxSpeed, 1.0f) * 100.0f;
 
-<<<<<<< HEAD
-		AkSoundEngine.SetRTPCValue ("Car_Speed", speedPercentage);
-			
+        AkSoundEngine.SetRTPCValue("Car_Speed", SpeedPercentage);
 
-		if (Input.GetKeyDown (KeyCode.W)) {
-			AkSoundEngine.PostEvent ("Car_Forward", gameObject);
-		}
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            AkSoundEngine.PostEvent("Car_Forward", gameObject);
+        }
 
-		if (Input.GetKeyUp (KeyCode.W)) {
-			AkSoundEngine.PostEvent ("Car_Stop", gameObject);
-		}
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            AkSoundEngine.PostEvent("Car_Stop", gameObject);
+        }
 
-		if (Input.GetKeyDown (KeyCode.A) || Input.GetKeyDown (KeyCode.D)) {
-			AkSoundEngine.PostEvent ("Car_Turn", gameObject);
-		}
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
+        {
+            AkSoundEngine.PostEvent("Car_Turn", gameObject);
+        }
 
-=======
->>>>>>> f9583fce3646315743dcd176ef96bda44faccc17
         // Velocity
         Vector3 direction = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
         Quaternion rotation = base.gameObject.transform.rotation;
 
-        body.AddForce(this.velocityPower * (rotation * Quaternion.Euler(0.0f, -90.0f, 0.0f) * new Vector3(0.0f, 0.0f, direction.z)) * Time.deltaTime);
-        
+        body.AddForce(this.VelocityPower * (rotation * Quaternion.Euler(0.0f, -90.0f, 0.0f) * new Vector3(0.0f, 0.0f, direction.z)) * Time.deltaTime);
+
         // Rotation
-        float speed = Mathf.Min(body.velocity.magnitude, this.velocityRequiredForRot) / this.velocityRequiredForRot;
-        body.rotation *= Quaternion.Euler(new Vector3(0.0f, this.rotationPower * direction.x * speed, 0.0f) * Time.deltaTime);
+        float speed = Mathf.Min(body.velocity.magnitude, this.VelocityRequiredForRot) / this.VelocityRequiredForRot;
+        body.rotation *= Quaternion.Euler(new Vector3(0.0f, this.RotationPower * direction.x * speed, 0.0f) * Time.deltaTime);
     }
 }
 

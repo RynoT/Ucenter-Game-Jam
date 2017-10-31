@@ -2,73 +2,75 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GridPathFinder : MonoBehaviour {
+public class GridPathFinder : MonoBehaviour
+{
 
-    private int width, height;
-    private CityGrid.GridItemType[] grid;
+    private int _width, _height;
+    private CityGrid.GridItemType[] _grid;
 
-    public class Node 
+    public class Node
     {
-        public int x, y;
-        public CityGrid.GridItemType type;
+        public int X, Y;
+        public CityGrid.GridItemType Type;
 
-        public Node parent;
-        public float f = 0.0f, g = 0.0f, h = 0.0f;
+        public Node Parent;
+        public float F = 0.0f, G = 0.0f, H = 0.0f;
 
-        public Node(int x, int y, ref CityGrid.GridItemType type) 
+        public Node(int x, int y, ref CityGrid.GridItemType type)
         {
-            this.x = x;
-            this.y = y;
-            this.type = type;
+            this.X = x;
+            this.Y = y;
+            this.Type = type;
         }
 
-        public Node init(ref Node to, ref Node parent)
+        public Node Init(ref Node to, ref Node parent)
         {
-            this.h = this.heuristic(ref to.x, ref to.y);
-            this.g = (int)this.type + parent.g;
-            this.f = this.g + this.h;
-            this.parent = parent;
+            this.H = this.Heuristic(ref to.X, ref to.Y);
+            this.G = (int)this.Type + parent.G;
+            this.F = this.G + this.H;
+            this.Parent = parent;
             return this;
         }
 
-        private float heuristic(ref int x, ref int y)
+        private float Heuristic(ref int x, ref int y)
         {
-            return Mathf.Pow(this.x - x, 2.0f) + Mathf.Pow(this.y - y, 2.0f);
+            return Mathf.Pow(this.X - x, 2.0f) + Mathf.Pow(this.Y - y, 2.0f);
         }
-         
+
     }
 
-    public void init(CityGrid.GridItemType[] grid, int width, int height)
+    public void Init(CityGrid.GridItemType[] grid, int width, int height)
     {
-        this.grid = grid;
-        this.width = width;
-        this.height = height;
+        this._grid = grid;
+        this._width = width;
+        this._height = height;
     }
 
     public Node node(int x, int y)
     {
-        return new Node(x, y, ref this.grid[x + y * this.width]);
+        return new Node(x, y, ref this._grid[x + y * this._width]);
     }
 
-    private Node[] trace(ref Node end) {
-        if (end == null || end.parent == null)
+    private Node[] trace(ref Node end)
+    {
+        if (end == null || end.Parent == null)
         {
             return null;
         }
         List<Node> path = new List<Node>();
         Node current = end;
-        while (current.parent != null)
+        while (current.Parent != null)
         {
             path.Add(current);
-            current = current.parent;
+            current = current.Parent;
         }
         path.Add(current);
         return path.ToArray();
     }
-   
-    public Node[] generate(Node from, Node to)
+
+    public Node[] Generate(Node from, Node to)
     {
-        int[][] offsets = new int[][]{ new int[]{ 1, 0 }, new int[]{ -1, 0 }, 
+        int[][] offsets = new int[][]{ new int[]{ 1, 0 }, new int[]{ -1, 0 },
             new int[]{ 0, 1 }, new int[]{ 0, -1 } };
 
         List<Node> open = new List<Node>(), closed = new List<Node>();
@@ -77,9 +79,9 @@ public class GridPathFinder : MonoBehaviour {
         while (open.Count > 0)
         {
             Node q = null;
-            foreach(Node next in open)
+            foreach (Node next in open)
             {
-                if (q == null || next.f < q.f)
+                if (q == null || next.F < q.F)
                 {
                     q = next;
                 }
@@ -89,52 +91,52 @@ public class GridPathFinder : MonoBehaviour {
             open.Remove(q);
             foreach (int[] offset in offsets)
             {
-                int newX = q.x + offset[0], newY = q.y + offset[1];
-                if(newX == to.x && newY == to.y)
+                int newX = q.X + offset[0], newY = q.Y + offset[1];
+                if (newX == to.X && newY == to.Y)
                 {
-                    to.parent = q;
+                    to.Parent = q;
                     return this.trace(ref to);
                 }
-                if (newX < 0 || newX >= this.width || newY < 0 || newY >= this.height)
+                if (newX < 0 || newX >= this._width || newY < 0 || newY >= this._height)
                 {
                     continue;
                 }
-                CityGrid.GridItemType type = this.grid[newX + newY * this.width];
-                if (type != CityGrid.GridItemType.ROAD)
+                CityGrid.GridItemType type = this._grid[newX + newY * this._width];
+                if (type != CityGrid.GridItemType.Road)
                 {
                     continue;
                 }
 
-                Node match = closed.Find(delegate(Node obj) { return obj.x == newX && obj.y == newY; });
+                Node match = closed.Find(obj => obj.X == newX && obj.Y == newY);
                 //Node match = from node in closed where (node.x == newX && node.y == newY) select node;
                 if (match != null)
                 {
                     continue;
                 }
-                match = open.Find(delegate(Node obj) { return obj.x == newX && obj.y == newY; });
+                match = open.Find(obj => obj.X == newX && obj.Y == newY);
                 if (match == null)
                 {
-                    open.Add(new Node(newX, newY, ref type).init(ref to, ref q));
+                    open.Add(new Node(newX, newY, ref type).Init(ref to, ref q));
                 }
                 else
                 {
-                    float newG = q.g + (int)type;
-                    if (newG + q.h < match.f)
+                    float newG = q.G + (int)type;
+                    if (newG + q.H < match.F)
                     {
-                        match.g = newG;
-                        match.parent = q;
+                        match.G = newG;
+                        match.Parent = q;
                     }
                 }
             }
 
         }
-        if (to.parent == null)
+        if (to.Parent == null)
         {
             foreach (Node next in closed)
             {
-                if (to.parent == null || next.f < to.parent.f)
+                if (to.Parent == null || next.F < to.Parent.F)
                 {
-                    to.parent = next;
+                    to.Parent = next;
                 }
             }
         }

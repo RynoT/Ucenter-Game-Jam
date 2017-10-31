@@ -4,40 +4,40 @@ using UnityEngine;
 
 public class DeliverObjective : MonoBehaviour
 {
-    public bool complete = false;
+    public bool Complete = false;
 
-    public GameObject node, passenger;
-    private int minDistance = 10;
+    public GameObject Node, Passenger;
+    private readonly int _minDistance = 10;
 
-    private CityGrid city;
-    private GameObject player;
-    private ObjectiveWrapper objective;
+    private CityGrid _city;
+    private GameObject _player;
+    private ObjectiveWrapper _objective;
 
-    private int stage = 0; // 0 = pickup, 1 = drop off
-    private float counter = 0.0f;
+    private int _stage = 0; // 0 = pickup, 1 = drop off
+    private float _counter = 0.0f;
 
-    public void init(ref CityGrid city, ref GameObject player)
+    public void Init(ref CityGrid city, ref GameObject player)
     {
-        this.city = city;
-        this.player = player;
+        this._city = city;
+        this._player = player;
     }
 
     private GridPathFinder.Node[] NewObjective()
     {
         GameObject[] objects = GameObject.FindGameObjectsWithTag("DestinationPoint");
-        if (this.city == null || this.player == null || objects.Length <= 1)
+        if (this._city == null || this._player == null || objects.Length <= 1)
         {
             return null;
         }
-        this.node = objects[Random.Range(0, objects.Length)];
+        this.Node = objects[Random.Range(0, objects.Length)];
 
-        GridPathFinder.Node[] nodes = this.city.pathfind(this.player.transform.position.x,
-            this.player.transform.position.z, this.node.transform.position.x, this.node.transform.position.z);
+        GridPathFinder.Node[] nodes = this._city.pathfind(this._player.transform.position.x,
+            this._player.transform.position.z, this.Node.transform.position.x, this.Node.transform.position.z);
         if (nodes == null)
         {
             return null;
         }
-        if (nodes.Length < this.minDistance)
+        if (nodes.Length < this._minDistance)
         {
             return null;
         }
@@ -46,74 +46,75 @@ public class DeliverObjective : MonoBehaviour
 
     private void RenewObjective()
     {
-        if (this.objective == null || this.player == null)
+        if (this._objective == null || this._player == null)
         {
             return;
         }
-        GridPathFinder.Node[] nodes = this.city.pathfind(this.player.transform.position.x,
-            this.player.transform.position.z, this.node.transform.position.x, this.node.transform.position.z);
+        GridPathFinder.Node[] nodes = this._city.pathfind(this._player.transform.position.x,
+            this._player.transform.position.z, this.Node.transform.position.x, this.Node.transform.position.z);
         if (nodes != null)
         {
-            this.objective.path = nodes;
+            this._objective.path = nodes;
         }
     }
 
     public void Update()
     {
-        if (this.objective == null)
+        if (this._objective == null)
         {
             GridPathFinder.Node[] nodes = this.NewObjective();
             if (nodes != null)
             {
-                this.objective = new ObjectiveWrapper(nodes);
+                this._objective = new ObjectiveWrapper(nodes);
 
-                this.passenger = GameObject.FindGameObjectWithTag("Passenger");
-                if (this.passenger != null)
+                this.Passenger = GameObject.FindGameObjectWithTag("Passenger");
+                if (this.Passenger != null)
                 {
-                    switch (this.stage)
+                    switch (this._stage)
                     {
                         case 0:
-                            this.passenger.transform.position = this.node.transform.position;
-                            this.passenger.transform.rotation = Quaternion.Euler(Vector3.zero);
+                            this.Passenger.transform.position = this.Node.transform.position;
+                            this.Passenger.transform.rotation = Quaternion.Euler(Vector3.zero);
                             break;
-					case 1:
-						this.passenger.transform.position = new Vector3 (0.0f, -1000.0f, 0.0f);
+                        case 1:
+                            this.Passenger.transform.position = new Vector3(0.0f, -1000.0f, 0.0f);
                             break;
+                        default: break;
                     }
                 }
             }
         }
         else
         {
-            this.objective.display(ref this.city.gridSize, this.node.transform.position);
+            this._objective.display(ref this._city.GridSize, this.Node.transform.position);
 
-            this.counter += Time.deltaTime;
-            if (this.counter > 2.0f)
+            this._counter += Time.deltaTime;
+            if (this._counter > 2.0f)
             {
                 this.RenewObjective();
-                this.counter = 0.0f;
+                this._counter = 0.0f;
             }
 
-            if (this.stage == 0 && this.passenger != null)
+            if (this._stage == 0 && this.Passenger != null)
             {
-                float dist = (this.player.transform.position - this.passenger.transform.position).magnitude;
+                float dist = (this._player.transform.position - this.Passenger.transform.position).magnitude;
                 if (dist < 0.6f)
                 {
-                    this.stage = 1;
-                    this.objective = null;
-					AkSoundEngine.PostEvent ("Pick_up", gameObject);
+                    this._stage = 1;
+                    this._objective = null;
+                    AkSoundEngine.PostEvent("Pick_up", gameObject);
 
                 }
             }
-            else if (this.stage == 1)
+            else if (this._stage == 1)
             {
-                float dist = (this.player.transform.position - this.node.transform.position).magnitude;
+                float dist = (this._player.transform.position - this.Node.transform.position).magnitude;
                 if (dist < 0.6f)
                 {
-                    this.stage = 0;
-                    this.objective = null;
-                    this.complete = true;
-					AkSoundEngine.PostEvent ("Win", gameObject);
+                    this._stage = 0;
+                    this._objective = null;
+                    this.Complete = true;
+                    AkSoundEngine.PostEvent("Win", gameObject);
 
                 }
             }
@@ -134,8 +135,8 @@ public class DeliverObjective : MonoBehaviour
             for (int i = 1; i < this.path.Length; i++)
             {
                 GridPathFinder.Node prev = this.path[i - 1], curr = this.path[i];
-                Vector3 start = new Vector3(prev.x * gridSize + gridSize * 0.5f, 0.25f, prev.y * gridSize + gridSize * 0.5f);
-                Vector3 end = new Vector3(curr.x * gridSize + gridSize * 0.5f, 0.25f, curr.y * gridSize + gridSize * 0.5f);
+                Vector3 start = new Vector3(prev.X * gridSize + gridSize * 0.5f, 0.25f, prev.Y * gridSize + gridSize * 0.5f);
+                Vector3 end = new Vector3(curr.X * gridSize + gridSize * 0.5f, 0.25f, curr.Y * gridSize + gridSize * 0.5f);
                 if (i == 1)
                 {
                     start = nodePos;
