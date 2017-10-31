@@ -19,12 +19,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4359877330829626}
-<<<<<<< HEAD
   - component: {fileID: 65260721190456208}
   - component: {fileID: 54931357938519382}
   - component: {fileID: 64730441895169602}
-=======
->>>>>>> f9583fce3646315743dcd176ef96bda44faccc17
   m_Layer: 0
   m_Name: caird_hall
   m_TagString: Untagged
@@ -265,7 +262,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1258792682364560}
   m_Mesh: {fileID: 4300000, guid: 2f2c7603866f1d84289a1614230d9836, type: 3}
-<<<<<<< HEAD
 --- !u!54 &54931357938519382
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -307,8 +303,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
-=======
->>>>>>> f9583fce3646315743dcd176ef96bda44faccc17
 --- !u!108 &108016873879042686
 Light:
   m_ObjectHideFlags: 1

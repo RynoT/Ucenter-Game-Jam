@@ -36,12 +36,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4701846564640842}
-<<<<<<< HEAD
   - component: {fileID: 65920423240201934}
   - component: {fileID: 54151753241908474}
   - component: {fileID: 64963958668982122}
-=======
->>>>>>> f9583fce3646315743dcd176ef96bda44faccc17
   m_Layer: 0
   m_Name: space_needle
   m_TagString: Untagged
@@ -115,7 +112,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1680169901268594}
   m_Mesh: {fileID: 4300000, guid: 0018ad09d71c1354fa8f5a2b14e5bdb5, type: 3}
-<<<<<<< HEAD
 --- !u!54 &54151753241908474
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -157,5 +153,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
-=======
->>>>>>> f9583fce3646315743dcd176ef96bda44faccc17

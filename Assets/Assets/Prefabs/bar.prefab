@@ -19,12 +19,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4942431082238310}
-<<<<<<< HEAD
   - component: {fileID: 65257126953779798}
   - component: {fileID: 54299521106616306}
   - component: {fileID: 64840935292487964}
-=======
->>>>>>> f9583fce3646315743dcd176ef96bda44faccc17
   m_Layer: 0
   m_Name: bar
   m_TagString: Untagged
@@ -115,7 +112,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1347481963946108}
   m_Mesh: {fileID: 4300000, guid: ea06840949bd095468f7095ae6902b9e, type: 3}
-<<<<<<< HEAD
 --- !u!54 &54299521106616306
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -157,5 +153,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
-=======
->>>>>>> f9583fce3646315743dcd176ef96bda44faccc17

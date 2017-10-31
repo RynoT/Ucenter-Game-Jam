@@ -13,7 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
-<<<<<<< HEAD
   - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{F8772D31-9C8C-4096-AFDC-C99E719A2E51}'
@@ -80,90 +79,50 @@ MonoBehaviour:
     Guid: '{825930E6-137D-401C-9713-2D82A831AD34}'
     m_lastTimePsrt1: 989935872
     m_lastTimePart2: -1999299330
-=======
-  - PhysicalPath: Events\Default Work Unit.wwu
-    ParentPhysicalPath: 
-    Guid: '{F8772D31-9C8C-4096-AFDC-C99E719A2E51}'
-<<<<<<< HEAD
     m_lastTimePsrt1: 257919747
     m_lastTimePart2: -1999299310
-=======
-    m_lastTimePsrt1: 799495744
-    m_lastTimePart2: -1999299311
->>>>>>> Car control
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B5328305-74BF-4EA8-80C0-2511EC7345EA}'
-<<<<<<< HEAD
     m_lastTimePsrt1: 257929748
     m_lastTimePart2: -1999299310
-=======
-    m_lastTimePsrt1: 799495744
-    m_lastTimePart2: -1999299311
->>>>>>> Car control
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{9EEDBD1A-FD03-4404-95EF-DAE95199D785}'
-<<<<<<< HEAD
     m_lastTimePsrt1: 257949749
     m_lastTimePart2: -1999299310
-=======
-    m_lastTimePsrt1: 799495744
-    m_lastTimePart2: -1999299311
->>>>>>> Car control
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{BB14AAF2-332B-4F65-86CC-A1CB9886B629}'
-<<<<<<< HEAD
     m_lastTimePsrt1: 257959749
     m_lastTimePart2: -1999299310
-=======
-    m_lastTimePsrt1: 799495744
-    m_lastTimePart2: -1999299311
->>>>>>> Car control
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{0D737BE3-61C7-4C35-971D-EB14DB28A005}'
-<<<<<<< HEAD
     m_lastTimePsrt1: 257949749
     m_lastTimePart2: -1999299310
-=======
-    m_lastTimePsrt1: 799495744
-    m_lastTimePart2: -1999299311
->>>>>>> Car control
     List: []
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{04E96FA2-A590-4BEA-A3F1-4B39CB6850FA}'
-<<<<<<< HEAD
     m_lastTimePsrt1: 257919747
     m_lastTimePart2: -1999299310
-=======
-    m_lastTimePsrt1: 799495744
-    m_lastTimePart2: -1999299311
->>>>>>> Car control
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{825930E6-137D-401C-9713-2D82A831AD34}'
-<<<<<<< HEAD
     m_lastTimePsrt1: 257959749
     m_lastTimePart2: -1999299310
-=======
-    m_lastTimePsrt1: 799495744
-    m_lastTimePart2: -1999299311
->>>>>>> Car control
->>>>>>> b3fdc5d8432a3292b1cc2e3dc2e49d810b03eb4e
     List: []
   ExpandedItems: []
   m_lastPopulateTimePsrt1: 0

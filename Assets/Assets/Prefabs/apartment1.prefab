@@ -19,12 +19,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4571138997451480}
-<<<<<<< HEAD
   - component: {fileID: 65908055025663528}
   - component: {fileID: 54738576908166786}
   - component: {fileID: 64030639249991710}
-=======
->>>>>>> f9583fce3646315743dcd176ef96bda44faccc17
   m_Layer: 0
   m_Name: apartment1
   m_TagString: Untagged
@@ -68,23 +65,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1198321061022700}
-<<<<<<< HEAD
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.0000004172325}
   m_LocalPosition: {x: 67, y: 0, z: 55}
-=======
-  m_LocalRotation: {x: -0, y: 0.70710665, z: -0, w: 0.70710695}
-  m_LocalPosition: {x: 8, y: 0, z: 26.5}
->>>>>>> f9583fce3646315743dcd176ef96bda44faccc17
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4255306065901906}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-<<<<<<< HEAD
   m_LocalEulerAnglesHint: {x: 0, y: 180.00002, z: 0}
-=======
-  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
->>>>>>> f9583fce3646315743dcd176ef96bda44faccc17
 --- !u!23 &23263824103931214
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -124,7 +112,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1535091016409796}
   m_Mesh: {fileID: 4300000, guid: a3a85bcc875b7344f9a6e72b72833095, type: 3}
-<<<<<<< HEAD
 --- !u!54 &54738576908166786
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -166,5 +153,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.15, y: 1.86, z: 1.92}
   m_Center: {x: 0, y: 0.7, z: 0}
-=======
->>>>>>> f9583fce3646315743dcd176ef96bda44faccc17

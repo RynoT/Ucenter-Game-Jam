@@ -36,10 +36,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4337581808929718}
-<<<<<<< HEAD
   - component: {fileID: 65549445753877502}
-=======
->>>>>>> f9583fce3646315743dcd176ef96bda44faccc17
   m_Layer: 0
   m_Name: Billboard
   m_TagString: Untagged
@@ -113,7 +110,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1587235954265746}
   m_Mesh: {fileID: 4300000, guid: c4a43668e3faa8e458947dac558d648e, type: 3}
-<<<<<<< HEAD
 --- !u!65 &65549445753877502
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -126,5 +122,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
-=======
->>>>>>> f9583fce3646315743dcd176ef96bda44faccc17

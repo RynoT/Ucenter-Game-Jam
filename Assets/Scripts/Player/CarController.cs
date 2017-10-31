@@ -13,24 +13,23 @@ public class CarController : MonoBehaviour
 
     public float VelocityRequiredForRot = 2.0f;
 
+    public bool Reversing = false;
+
+    private Rigidbody _body;
+
     public void Start()
     {
-        Rigidbody body = base.GetComponent<Rigidbody>();
-        if (body != null)
-        {
-            body.maxAngularVelocity = 0.0f;
-        }
+        this._body = base.GetComponent<Rigidbody>();
     }
 
     public void Update()
     {
-        Rigidbody body = base.GetComponent<Rigidbody>();
-        if (body == null)
+        if (this._body == null)
         {
             return;
         }
         //Debug.Log(body.velocity.magnitude);
-        this.SpeedPercentage = Mathf.Min(body.velocity.magnitude / this.MaxSpeed, 1.0f) * 100.0f;
+        this.SpeedPercentage = Mathf.Min(this._body.velocity.magnitude / this.MaxSpeed, 1.0f) * 100.0f;
 
         AkSoundEngine.SetRTPCValue("Car_Speed", SpeedPercentage);
 
@@ -53,11 +52,12 @@ public class CarController : MonoBehaviour
         Vector3 direction = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
         Quaternion rotation = base.gameObject.transform.rotation;
 
-        body.AddForce(this.VelocityPower * (rotation * Quaternion.Euler(0.0f, -90.0f, 0.0f) * new Vector3(0.0f, 0.0f, direction.z)) * Time.deltaTime);
+        this.Reversing = direction.z < 0.0f;
+        this._body.AddForce(this.VelocityPower * (rotation * Quaternion.Euler(0.0f, -90.0f, 0.0f) * new Vector3(0.0f, 0.0f, direction.z)) * Time.deltaTime);
 
         // Rotation
-        float speed = Mathf.Min(body.velocity.magnitude, this.VelocityRequiredForRot) / this.VelocityRequiredForRot;
-        body.rotation *= Quaternion.Euler(new Vector3(0.0f, this.RotationPower * direction.x * speed, 0.0f) * Time.deltaTime);
+        float speed = Mathf.Min(this._body.velocity.magnitude, this.VelocityRequiredForRot) / this.VelocityRequiredForRot;
+        this._body.rotation *= Quaternion.Euler(new Vector3(0.0f, this.RotationPower * direction.x * speed, 0.0f) * Time.deltaTime);
     }
 }
 

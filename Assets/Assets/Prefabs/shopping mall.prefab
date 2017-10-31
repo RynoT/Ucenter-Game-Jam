@@ -19,12 +19,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4685853605750740}
-<<<<<<< HEAD
   - component: {fileID: 65354647975272320}
   - component: {fileID: 54529344561652764}
   - component: {fileID: 64565850256975270}
-=======
->>>>>>> f9583fce3646315743dcd176ef96bda44faccc17
   m_Layer: 0
   m_Name: shopping mall
   m_TagString: Untagged
@@ -68,23 +65,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1153009496701138}
-<<<<<<< HEAD
   m_LocalRotation: {x: -0, y: -0.00000035762787, z: -0, w: 1}
   m_LocalPosition: {x: 57, y: 0, z: 23}
-=======
-  m_LocalRotation: {x: -0, y: 0.70710665, z: -0, w: 0.70710695}
-  m_LocalPosition: {x: 12, y: 0, z: 22}
->>>>>>> f9583fce3646315743dcd176ef96bda44faccc17
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4220040574006826}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-<<<<<<< HEAD
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
-  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
->>>>>>> f9583fce3646315743dcd176ef96bda44faccc17
 --- !u!23 &23655272729446982
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -124,7 +112,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1733634249587662}
   m_Mesh: {fileID: 4300000, guid: d364b0f373fd71b4687991f2072f4a33, type: 3}
-<<<<<<< HEAD
 --- !u!54 &54529344561652764
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -166,5 +153,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.02, y: 1.86, z: 1.92}
   m_Center: {x: 0, y: 0.7, z: 0}
-=======
->>>>>>> f9583fce3646315743dcd176ef96bda44faccc17

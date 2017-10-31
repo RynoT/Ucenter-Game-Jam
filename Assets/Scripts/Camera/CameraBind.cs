@@ -11,9 +11,15 @@ public class CameraBind : MonoBehaviour
 
     public GameObject Bound;
 
+    private CarController _controller;
+
     public void Start()
     {
         this.SetToBound();
+        if (this.Bound != null)
+        {
+            this._controller = this.Bound.GetComponent<CarController>();
+        }
     }
 
     public void SetToBound()
@@ -32,16 +38,16 @@ public class CameraBind : MonoBehaviour
             return;
         }
         Vector3 current = this.transform.position, target = this.Bound.transform.position;
-
-        Vector3 frame = new Vector3
+        this.transform.position = new Vector3
         {
             x = Mathf.Lerp(current.x, target.x, this.CameraSpeed.x * Time.deltaTime),
             y = Mathf.Lerp(current.y, target.y + this.Height, this.CameraSpeed.y * Time.deltaTime),
             z = Mathf.Lerp(current.z, target.z, this.CameraSpeed.z * Time.deltaTime)
         };
-
-
-        this.transform.position = frame;
+        if (this._controller != null && this._controller.Reversing)
+        {
+            
+        }
 
         Quaternion rotation = this.transform.rotation;
         this.transform.LookAt(target);

@@ -60490,10 +60490,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpeedPercentage: 0
-  MaxSpeed: 3.5
-  VelocityPower: 15
-  RotationPower: 15
-  VelocityRequiredForRot: 2
+  MaxSpeed: 3
+  VelocityPower: 700
+  RotationPower: 225
+  VelocityRequiredForRot: 3
+  Reversing: 0
 --- !u!143 &1475370966
 CharacterController:
   m_ObjectHideFlags: 0
@@ -74919,7 +74920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Height: 4
-  CameraSpeed: {x: 5, y: 5, z: 5}
+  CameraSpeed: {x: 4, y: 4, z: 4}
   LookAtDeadZone: 2
   Bound: {fileID: 1475370963}
 --- !u!114 &1842048600
